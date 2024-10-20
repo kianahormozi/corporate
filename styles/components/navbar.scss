@@ -1,0 +1,9 @@
+.links {
+    text-decoration: none;
+    padding-bottom: .3rem;
+    &:hover{
+      border-bottom: 1px solid red;
+      //color:red;
+      transition: all 0.3s;
+    }
+}
