@@ -2,15 +2,17 @@
 @import "./font.css";
 @import '~bootstrap/scss/bootstrap.scss';
 @import "bootstrap-icons/font/bootstrap-icons.css";
-@import 'bootstrap/dist/css/bootstrap.min.css'; 
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 // swiper
 @import 'swiper/scss';
-@import 'swiper/scss/navigation';
-@import 'swiper/scss/pagination';
+@import 'swiper/scss/autoplay';
 
 //components 
 @import 'components/navbar.scss';
+@import 'components/footer.scss';
+@import 'components/Office/main.scss';
+@import 'components/header/main.scss';
 
 * {
   box-sizing: border-box;
@@ -18,12 +20,16 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
-  --bs-gutter-x:0;
+  --bs-gutter-x:3rem;
 }
 
 .container-fluid {
-  --bs-gutter-x: 7rem; 
+  --bs-gutter-x:0; 
 }
 
 body {
@@ -34,5 +40,37 @@ body {
 
 a {
   text-decoration :none;
+  list-style: circle;
 }
 
+.title-color {
+  color: #222;
+}
+.text-color {
+  color: #888;
+}
+
+.red-color {
+  color: #ec1113;
+}
+
+.text-line-height {
+  line-height: 1.8;
+}  
+
+p{
+  margin: 0;
+  line-height: 1.7;
+}
+
+.h-100 { 
+  height: 100vh; 
+} 
+
+iframe { 
+  border: none; 
+} 
+
+.custom-border-top {
+  border-top: 1px solid #fff ;
+}

@@ -1,0 +1,67 @@
+@import './slider.scss';
+@import './boxes.scss';
+
+.header-content {
+    z-index: 2;
+  }
+  
+  .logo-img {
+    width: auto;
+    height: 50px;
+  }
+  
+  .social-links, .contact-info {
+    color: #fff;
+
+  }
+  
+ /* .full-width-border {
+    width: 100%;
+    border-bottom: 1px solid #fff; 
+    margin-bottom: 10px;
+  }
+  */
+
+  .bottom-line {
+    border-bottom: 1px solid #888;
+  }
+  
+  .left-border {
+    border-right: 1px solid #888; 
+    margin-right: 2.5rem;
+  }
+  
+  .x-padding {
+    padding-right: 2.5rem;
+    padding-left: 0;
+
+  }
+
+  .links {
+    text-decoration: none;
+    padding-bottom: .3rem;
+  }
+  
+  .header-links {
+    display: flex;
+    gap: 3.5rem;
+    color: #fff;
+  }
+  
+  .header-list {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #ec1113; // Only for header links
+    }
+  
+    &.active {
+      color: #fff; // Ensure the active item remains white or any other color you prefer
+      &:hover {
+        color: #fff; // Keep the color the same on hover when active
+      }
+    }
+  }
+  
