@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 
 const HeaderBoxes = ({ activeSlide, setActiveSlide }) => {
@@ -21,13 +20,13 @@ const HeaderBoxes = ({ activeSlide, setActiveSlide }) => {
             className={`box ${activeSlide === box.id ? 'active' : ''}`}
             onClick={() => setActiveSlide(box.id)}
           >
-            <Col>
-            <i className={`bi ${box.icon} icon mb-3`}></i>
-            </Col>
-            <Col>
-            <div className="small-title">{box.title}</div>
-            <div className="large-text">{box.text}</div>
-            </Col>
+            <div>
+              <i className={`bi ${box.icon} icon mb-3`}></i>
+            </div>
+            <div>
+              <p className="small-title">{box.title}</p>
+              <p className="large-text">{box.text}</p>
+            </div>
           </Col>
         ))}
       </Row>

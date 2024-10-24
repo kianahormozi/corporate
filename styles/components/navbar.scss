@@ -3,11 +3,7 @@
   padding-bottom: 0.3rem;
 
   &:hover {
-    // Only for header links
     @if not(isFooter) {
-      // Uncomment this if you want hover effect on header links
-      // border-bottom: 1px solid red;
-      // color: red;
       transition: all 0.3s;
     }
   }
@@ -23,9 +19,8 @@
   text-decoration: none;
   color: #fff;
   transition: color 0.3s ease;
-
   &:hover {
-    color: #f1f1f1; // Only for header links
+    color: #f1f1f1; 
   }
 }
 
@@ -33,16 +28,16 @@
   position: relative; 
   color: #888;
   font-size: small;
-  padding-right: 1rem; // Space between circle and link text
+  padding-right: 1rem; 
   
   &::before {
-    content: '●'; // Circle content
-    font-size: 0.5rem; // Circle size
-    color: #888; // Circle color
+    content: '●';
+    font-size: 0.5rem; 
+    color: #888; 
     position: absolute;
-    right: 0; // Position circle to the left of link
+    right: 0; 
     top: 50%;
-    transform: translateY(-50%); // Center circle relative to link
+    transform: translateY(-50%); 
   }
 }
 
@@ -51,20 +46,18 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 1rem; // Vertical space between links
-  height: auto; // Control number of lines
-  max-height: 10rem; // Max height for columns
+  gap: 1rem; 
+  height: auto; 
+  max-height: 10rem; 
 }
 
 .active {
   padding: 10px 24px;
   border-radius: 25px;
   border: 1.5px solid;
-  background-color: transparent; // Oval shape for active links
-  // Only applies to header
+  background-color: transparent; 
 }
 
-// Ensure footer links don't have active styles
 .footer-list.active {
-  background-color: transparent; // No active style for footer links
+  background-color: transparent;
 }

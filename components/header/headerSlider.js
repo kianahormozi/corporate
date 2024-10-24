@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/autoplay';
-import SwiperCore, { Autoplay } from 'swiper';
+import React, { useState, useRef } from 'react'; // اضافه کردن useRef
 import { Container } from 'react-bootstrap';
+import SwiperCore, { Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
-import HeaderBoxes from './headerBoxes'; 
+import HeaderBoxes from './headerBoxes';
+
 
 SwiperCore.use([Autoplay]);
 
@@ -18,21 +17,25 @@ const slides = [
 
 const HeaderSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef(null); // استفاده از ref برای کنترل اسلایدر
 
   const handleBoxClick = (index) => {
     setActiveIndex(index);
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(index); // تغییر به اسلاید مربوطه
+    }
   };
 
   return (
     <Container fluid className="p-0">
       <Swiper
+        ref={swiperRef} // اضافه کردن ref
         spaceBetween={0}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 1000, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         className="swiper-slider"
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-       // autoplay={false}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -49,8 +52,8 @@ const HeaderSlider = () => {
         ))}
       </Swiper>
 
-      {/* کامپوننت HeaderBoxes */}
-      <HeaderBoxes slides={slides} activeIndex={activeIndex} handleBoxClick={handleBoxClick} />
+      {/* فراخوانی HeaderBoxes */}
+      <HeaderBoxes activeSlide={activeIndex} setActiveSlide={handleBoxClick} />
     </Container>
   );
 };

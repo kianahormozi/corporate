@@ -8,18 +8,18 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: #f2f3f5; // رنگ پس‌زمینه
-    border-radius: 2px; // برای مربع
-    padding: 0; // حذف پدینگ داخلی
+    background-color: #f2f3f5; 
+    border-radius: 2px; 
+    padding: 0; 
     transition: background-color 0.3s ease;
   
     i {
-      margin: 0; // حذف مارجین داخلی آیکون‌ها
-      line-height: 1; // تنظیم دقیق‌تر جایگذاری آیکون
+      margin: 0; 
+      line-height: 1;
     }
   
     &:hover {
-      background-color: #ff0000; // رنگ پس‌زمینه هنگام هاور
+      background-color: #ec1113; 
       color: #ffff;
     }
   }

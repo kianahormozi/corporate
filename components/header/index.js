@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Navbar from '../navbar';
 import Link from 'next/link';
 import HeaderSlider from './headerSlider';
+import HeaderCenter from './headerCenter';
 
 const Header = () => {
   const [isNavVisible, setNavVisible] = useState(false);
@@ -33,7 +34,6 @@ const Header = () => {
       <HeaderSlider />
       <Container className="header-content position-absolute top-0 start-0 end-0 pt-2">
         <Row className="d-flex bottom-line pb-1">
-          {/* Social Media Links */}
           <Col lg="auto" className="d-flex gap-4 px-0 social-links">
             {socialLinks.map((socialLink, index) => (
               <Link href={socialLink.link} key={index} target="_blank" rel="noopener noreferrer" className="text-decoration-none small text-light">
@@ -68,6 +68,7 @@ const Header = () => {
             />
           </Col>
         </Row>
+        <HeaderCenter />
       </Container>
     </>
   );

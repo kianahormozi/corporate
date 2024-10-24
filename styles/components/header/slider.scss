@@ -1,29 +1,28 @@
 .swiper-slider {
-    position: relative; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh; 
-    z-index: 0; 
-  }
-  
-  .slide {
-    position: relative; /* اطمینان از اینکه تصویر داخل هر اسلاید درست نمایش داده شود */
-    width: 100%;
-    height: 100vh; /* اطمینان از اینکه تمام ارتفاع صفحه را پوشش دهد */
-  }
-  
-  .image-contain {
-    object-fit: cover; /* برای جلوگیری از اعوجاج تصویر */
-    width: 100%; /* اطمینان از اینکه تصویر تمام فضای اسلاید را پر کند */
-    height: 100%; /* اطمینان از اینکه تصویر تمام فضای اسلاید را پر کند */
-  }
-  
-    /* استایل اسلایدر */
-    
-    .swiper-slide img {
-      object-fit: cover;
-      width: 100%;
-      height: 100vh;
-    }
-    
+  position: relative; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 170vh;
+  z-index: 0;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 170vh;
+}
+
+.image-contain {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+  width: 100%;
+  height: 150vh;
+}
+
+
