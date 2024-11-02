@@ -1,0 +1,48 @@
+.form-container {
+  .form-columns {
+    column-count: 2;
+    column-gap: 2rem;
+
+    @media (width: 768px) {
+      column-count: 2; 
+    }
+    @media (width: 576px) {
+      column-count: 1;
+      
+      
+    }
+  }
+  
+  .half-width-btn {
+    width: 100%;
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .radius-none {
+    border-radius: 0;
+  }
+
+  .input-height {
+    height: 55px;
+    width: 100%;
+  }
+
+  .form-control::placeholder { 
+    color: #999;
+  }
+
+  .form-select {
+    direction: rtl;
+    text-align: left;
+  }
+
+  button {
+    background-color: #dc3545;
+    border: none;
+
+    &:hover {
+      background-color: darken(#dc3545, 10%);
+    }
+  }
+}

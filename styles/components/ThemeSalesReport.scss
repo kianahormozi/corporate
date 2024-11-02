@@ -1,0 +1,35 @@
+.Report-bg {
+    position: relative;
+    background-image: url('/images/image1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: auto; 
+}
+
+.Report-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(34, 34, 34, 0.7); 
+    z-index: 1;
+}
+
+.color-text {
+    position: relative;
+    color:#ffff;
+    z-index: 3;
+}
+
+.py-10 {
+    padding-top : 10rem;
+    padding-bottom : 10rem;
+}
+
+.pb-md-6rem {
+    padding-bottom: 6rem;
+}
+

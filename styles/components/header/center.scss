@@ -1,17 +1,16 @@
 .center-content {
-    height: 100vh; /* تمام ارتفاع صفحه */
+    height: 100vh; 
     display: flex;
-    align-items: right; /* عمودی مرکز */
-    margin-top: 7rem;
-
+    align-items: right;
+    margin-top: 5.5rem;
   }
   
   .animated-line {
     position: absolute;
     left: calc(100% + 5px); 
-    top: 20px; /* تنظیم جدید برای قرارگیری خط پایین‌تر */
+    top: 20px; 
     width: 4px;
-    height: 60px; /* ارتفاع خط */
+    height: 60px; 
     background-color: #fff;
     animation: moveLine 3s infinite ease-in-out;
   }
@@ -44,20 +43,5 @@
     font-size: 1rem;
     padding-right: 2rem;
 
-  }
-  
-  .cta-button {
-    border: 2px solid #ec1113;
-    border-radius: 25px;
-    color: #fff;
-    padding: 10px 25px;
-    transition: background-color 0.3s ease;
-    margin-right: 2rem;
-  }
-  
-  .cta-button:hover {
-    background-color: #ec1113;
-    border-color: #ec1113;
-    color: #fff;
   }
   

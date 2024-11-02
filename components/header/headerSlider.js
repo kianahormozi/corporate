@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react'; // اضافه کردن useRef
 import { Container } from 'react-bootstrap';
-import SwiperCore, { Autoplay } from 'swiper';
+import  SwiperCore, { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
-import HeaderBoxes from './headerBoxes';
+import HeaderBoxes from './HeaderBoxes';
 
 
 SwiperCore.use([Autoplay]);
@@ -17,19 +17,19 @@ const slides = [
 
 const HeaderSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const swiperRef = useRef(null); // استفاده از ref برای کنترل اسلایدر
+  const swiperRef = useRef(null); 
 
   const handleBoxClick = (index) => {
     setActiveIndex(index);
     if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideTo(index); // تغییر به اسلاید مربوطه
+      swiperRef.current.swiper.slideTo(index); 
     }
   };
 
   return (
     <Container fluid className="p-0">
       <Swiper
-        ref={swiperRef} // اضافه کردن ref
+        ref={swiperRef} 
         spaceBetween={0}
         slidesPerView={1}
         loop={true}
@@ -43,16 +43,15 @@ const HeaderSlider = () => {
               <Image
                 src={slide.src}
                 alt={slide.alt}
-                layout="fill"
-                objectFit="cover"
-                className="image-contain"
+                width={0}
+                height={0}
+                sizes="150vh"
+                className=" swiper-image"
               />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* فراخوانی HeaderBoxes */}
       <HeaderBoxes activeSlide={activeIndex} setActiveSlide={handleBoxClick} />
     </Container>
   );

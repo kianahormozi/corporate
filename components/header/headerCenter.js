@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const HeaderCenter = () => {
@@ -6,13 +7,13 @@ const HeaderCenter = () => {
     <Row className=" align-items-center">
       <Col lg={8}>
         <div className="title-container position-relative pb-4">
-        <div className="animated-line"></div> {/* خط انیمیشنی */}
+        <div className="animated-line"></div> 
           <p className="main-title ">RESEARCH & DEVELOPMENT</p>
         </div>
         <p className="description pb-5">
           Invest in early-stage companies in exchange for equity, or an ownership stake, in the companies they invest in.
         </p>
-        <Button variant="outline-light" className="cta-button">ادامه مطلب</Button>
+        <Link href='/' className="link-button">ادامه مطلب</Link>
       </Col>
     </Row>
   </Container>

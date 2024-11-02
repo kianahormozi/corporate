@@ -1,0 +1,54 @@
+@import './motion.scss';
+.about-us-section {
+    padding: 0;
+    position: relative;
+    border: none;
+  }
+  
+  .about-us-title {
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .about-us-section h5 {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .about-us-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-us-section p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+
+  }
+  
+  .main-image {
+    width: 100%;
+  }
+  
+  .overlay-image {
+    right: 17px; 
+    bottom: -19px;
+    z-index: 2;
+  }
+  
+  .image-bottom {
+    position: absolute;
+    width: 75%;
+    top: 0px; 
+    left: 0;
+    z-index: 1; 
+}
+
+.image-top {
+    position: absolute;
+    width: 75%;
+    top: 20px; 
+    left: 0;
+    z-index: 2; 
+}

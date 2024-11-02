@@ -1,0 +1,74 @@
+.bussiness-img {
+    object-fit: cover;
+    border-radius: 0;
+  }
+  
+  .custom-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .custom-circle {
+    background-color: #bfbfbf;
+    color: #fff; 
+    border: none;
+    border-radius: 50%; 
+    width: 9px; 
+    height: 9px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer; 
+    font-size: 18px; 
+    margin: 0 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.custom-circle.active {
+    background-color: #ec1113; 
+    padding: 4px 10px; 
+    border-radius: 35%;
+}
+
+  .read-more-link {
+    display: inline-flex;
+    color: #ec1113;
+    text-decoration: none;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .read-more-arrow {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+  }
+  
+  .read-more-text {
+    transition: transform 0.3s ease;
+  }
+  
+  /* حالت هاور */
+  .read-more-link:hover .read-more-text {
+    transform: translateX(-25px); 
+  }
+  
+  .read-more-link:hover .read-more-arrow {
+    transform: translateX(-25px); 
+    opacity: 0;
+  }
+  
+.read-more-link .read-more-arrow-back {
+  position: absolute;
+  right: -22px; 
+  top: 62px; 
+  transform: translateY(-50%); 
+  opacity: 0;
+  color: #ec1113;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.read-more-link:hover .read-more-arrow-back {
+  opacity: 1;
+  transform: translateX(-15px) translateY(-50%);
+}

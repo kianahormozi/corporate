@@ -5,8 +5,8 @@ import OfficeDetails from './officeDetails';
 
 const OfficeMap = () => {
     return (
-        <Container fluid className="p-0 mt-4 h-100">
-            <Row noGutters className="h-100"> 
+        <Container fluid className="px-0 h-100">
+            <Row className="h-100 position-relative"> 
                 <OfficeDetails />
                 <Map />
             </Row> 

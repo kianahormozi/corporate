@@ -7,18 +7,32 @@
 // swiper
 @import 'swiper/scss';
 @import 'swiper/scss/autoplay';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
 
 //components 
 @import 'components/navbar.scss';
 @import 'components/footer.scss';
 @import 'components/Office/main.scss';
-@import 'components/header/main.scss';
-@import 'components/aboutUs.scss';
+@import 'components/Header/main.scss';
+@import 'components/aboutUs/main.scss';
+@import 'components/advantagesItems.scss';
+@import 'components/Bussines/main.scss';
+@import 'components/ThemeSalesReport.scss';
+@import 'components/prices/main.scss';
+@import 'components/TestiMonials/main.scss';
+@import 'components/Quote/main.scss';
+
+:root {
+  direction: ltr;
+  text-orientation: mixed;
+}
 
 * {
   box-sizing: border-box;
-  padding: 0;
+  padding: 0 ;
   margin: 0;
+  
 }
 
 html {
@@ -26,8 +40,15 @@ html {
 }
 
 .container {
-  --bs-gutter-x:3rem;
+  --bs-gutter-x: 3rem !important;
+  @media (max-width: 768px) {
+    --bs-gutter-x: 1.5rem!important;
+  }
+  @media (max-width: 576px) {
+    --bs-gutter-x: 1rem !important;
+  }
 }
+
 
 .container-fluid {
   --bs-gutter-x:0; 
@@ -41,10 +62,9 @@ body {
 
 a {
   text-decoration :none;
-  list-style: circle;
 }
 
-.title-color {
+.primary-color {
   color: #222;
 }
 .text-color {
@@ -52,7 +72,7 @@ a {
 }
 
 .red-color {
-  color: #ec1113;
+  color: #ec1113; 
 }
 
 .text-line-height {
@@ -75,3 +95,42 @@ iframe {
 .custom-border-top {
   border-top: 1px solid #fff ;
 }
+
+.vertical-line {
+  width: 60px;
+  height: 2px;
+  background-color: #aaaaaa;
+}
+
+.text-font { 
+  font-size: 13px;
+}
+
+.link-button {
+  border: 2px solid #ec1113;
+  border-radius: 25px;
+  color: #fff;
+  padding: 10px 25px;
+  transition: background-color 0.3s ease;
+  margin-right: 2rem;
+}
+
+.link-button:hover {
+  background-color: #ec1113;
+  border-color: #ec1113;
+  color: #fff;
+}
+
+.dark-link-button {
+    border: 3px solid #ec1113;
+    border-radius: 25px;
+    color: #222;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+}
+
+.dark-link-button:hover {
+  background-color: #ec1113;
+  border-color: #ec1113;
+  color: #fff;
+} 

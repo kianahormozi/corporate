@@ -1,0 +1,16 @@
+@import './form.scss';
+
+.Quote-bg {
+    position: relative;
+    background-image: url('/images/Quote-bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; 
+    width: 100%; 
+
+    @media (max-width: 768px) { 
+        background-attachment: scroll; 
+    }
+}

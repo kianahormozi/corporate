@@ -2,7 +2,7 @@ import React from 'react';
 import { Col } from 'react-bootstrap';
 const Map = () => {
      return ( 
-     <Col md={8} className="p-0">
+     <Col md={12} sm={12} className="p-0" style={{height:"600px"}}>
          <iframe
           title="map" 
           className="w-100 h-100" 

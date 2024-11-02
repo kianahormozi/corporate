@@ -1,0 +1,26 @@
+.bg-image {
+    background-image: url('/images/Advantages-bg.jpg');
+    background-repeat:round;
+    background-position: center;
+    background-size: cover;
+
+    @media (max-width:768px) {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+  }
+  
+.advantages-list {
+    column-count: 2;
+    column-gap: 5rem;
+
+    @media (max-width:576px) {
+        column-count: 1;
+        
+    }
+}
+  
+.advantages-list article {
+    break-inside: avoid;
+}
+    
