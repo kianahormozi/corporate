@@ -1,0 +1,40 @@
+.video-slide {
+  width: 100%;
+  position: relative;
+  margin-top: 12px;
+}
+
+.video-thumbnail {
+  position: relative;
+  z-index: 1;
+  width: 480px; /* set width to match the Image component */
+  height: 450px; /* set height to match the Image component */
+  box-shadow: 23px 20px #cececf;
+}
+
+.video-thumbnail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+  z-index: 2;
+}
+
+.play-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.play-button i {
+  font-size: 70px;
+  color: red;
+}

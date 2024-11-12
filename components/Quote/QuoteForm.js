@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Button, InputGroup } from 'react-bootstrap';
+import { InputGroup, Form, Button } from 'react-bootstrap';
 
 const QuoteForm = () => {
   const [formData, setFormData] = useState({
@@ -17,12 +17,13 @@ const QuoteForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Handle form submission
   };
 
   return (
     <Form onSubmit={handleSubmit} className="px-lg-4 px-md-0 bg-transparent form-container">
       <div className="form-columns">
-        <InputGroup className="input-height mb-3">
+        <InputGroup className="input-height mb-3 position-relative">
           <InputGroup.Text className="border-0 radius-none bg-white">
             <i className="bi bi-box-seam red-color"></i>
           </InputGroup.Text>
@@ -31,13 +32,17 @@ const QuoteForm = () => {
             value={formData.freightType}
             onChange={handleChange}
             required
-            className="border-0 radius-none text-end"
+            className="border-0 radius-none text-end custom-select no-focus"
           >
-            <option value="">Select...</option>
+            <option value="">انتخاب کنید</option>
             <option value="Air">Air</option>
             <option value="Sea">Sea</option>
             <option value="Land">Land</option>
           </Form.Select>
+          {/* Show the icon only if no option is selected */}
+          {formData.freightType === '' && (
+            <i className="bi bi-caret-down-fill position-absolute select-icon"></i>
+          )}
         </InputGroup>
 
         <InputGroup className="input-height mb-3">
@@ -49,9 +54,9 @@ const QuoteForm = () => {
             name="weight"
             value={formData.weight}
             onChange={handleChange}
-            placeholder="Enter weight"
+            placeholder="Enter weight" 
             required
-            className="border-0 radius-none"
+            className="border-0 radius-none no-focus"
           />
         </InputGroup>
 
@@ -66,7 +71,7 @@ const QuoteForm = () => {
             onChange={handleChange}
             placeholder="Enter city"
             required
-            className="border-0 radius-none"
+            className="border-0 radius-none no-focus"
           />
         </InputGroup>
 
@@ -81,7 +86,7 @@ const QuoteForm = () => {
             onChange={handleChange}
             placeholder="Enter email"
             required
-            className="border-0 radius-none"
+            className="border-0 radius-none no-focus"
           />
         </InputGroup>
 
@@ -96,7 +101,7 @@ const QuoteForm = () => {
             onChange={handleChange}
             placeholder="Enter delivery city"
             required
-            className="border-0 radius-none"
+            className="border-0 radius-none no-focus"
           />
         </InputGroup>
 

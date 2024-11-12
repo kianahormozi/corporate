@@ -2,34 +2,22 @@
     object-fit: cover;
     border-radius: 0;
   }
-  
-  .custom-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .custom-circle {
-    background-color: #bfbfbf;
-    color: #fff; 
-    border: none;
-    border-radius: 50%; 
-    width: 9px; 
-    height: 9px;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    cursor: pointer; 
-    font-size: 18px; 
-    margin: 0 5px; 
-    transition: background-color 0.3s ease; 
+
+.title {
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
 }
 
-.custom-circle.active {
-    background-color: #ec1113; 
-    padding: 4px 10px; 
-    border-radius: 35%;
+.title:hover {
+  color: #ec1113;
+  transition: transform 0.3s ease;
 }
+
+  .custom-navigation {
+    display: flex;
+    justify-content: flex-start;
+    gap: 7px;
+  }
 
   .read-more-link {
     display: inline-flex;
@@ -48,7 +36,6 @@
     transition: transform 0.3s ease;
   }
   
-  /* حالت هاور */
   .read-more-link:hover .read-more-text {
     transform: translateX(-25px); 
   }
@@ -71,4 +58,18 @@
 .read-more-link:hover .read-more-arrow-back {
   opacity: 1;
   transform: translateX(-15px) translateY(-50%);
+}
+
+.swiper-pagination-bullet {
+  background-color: gray;
+  width: 9px;
+  height: 9px;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color:#ec1113;
+  width: 20px;
+  border-radius: 8px;
+  opacity: 1;
 }

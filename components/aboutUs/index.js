@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card} from "react-bootstrap";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from 'next/link';
@@ -7,8 +7,7 @@ import Link from 'next/link';
 const AboutUs = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({ target: ref });
-    const translateYTopImage = useTransform(scrollYProgress, [-0.5, 1.5], [-120, 100]); // حرکت parallax برای عکس رویی
-
+    const translateYTopImage = useTransform(scrollYProgress, [-0.5, 1.5], [-120, 100]); 
     return (
         <Container className="about-us-section" ref={ref}>
             <Row className="align-items-center position-relative">
@@ -31,18 +30,14 @@ const AboutUs = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-
-                {/* برای سایزهای lg و بالاتر */}
                 <Col md={6} className="position-relative text-start d-none d-lg-block">
                     <div className="position-relative">
-                        {/* عکس ثابت */}
                         <motion.img 
                             src="/images/about-2.jpg" 
                             alt="Mountain View" 
                             className="position-absolute overlay-image w-75"
-                            style={{ y: 0 }} // عکس زیری ثابت
+                            style={{ y: 0 }} 
                         />
-                        {/* عکس متحرک با افکت parallax */}
                         <motion.img 
                             src="/images/about-1.jpg" 
                             alt="Business News" 
@@ -50,12 +45,10 @@ const AboutUs = () => {
                             initial={{ opacity: 0, scale: 0.9 }} 
                             animate={{ opacity: 1, scale: 1 }} 
                             transition={{ duration: 0.6, ease: "easeOut" }}
-                            style={{ y: translateYTopImage }} // حرکت parallax برای عکس رویی
+                            style={{ y: translateYTopImage }} 
                         />
                     </div>
                 </Col>
-
-                {/* برای سایزهای sm و md */}
                 <Col md={12} className="text-center pt-sm-5 pt-md-5 d-lg-none">
                     <img 
                         src="/images/about-1.jpg" 

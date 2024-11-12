@@ -1,0 +1,53 @@
+.subscribe-box {
+    background-color: #ec1113;
+    max-width: 300px;
+    margin: auto;
+  
+    .icon {
+      i {
+        font-size: 5.5rem;
+        color: #fff;
+      }
+    }
+  
+    .subscribe-title {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  
+    .subscribe-text {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  
+    .email-input {
+      padding: 10px;
+      font-size: 1rem;
+      text-align: right;
+      border-radius: 0;
+
+      &::placeholder {
+        opacity: 0.5;
+        font-size: 13px;
+      }
+    }
+  
+    .subscribe-button {
+      background-color: transparent;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background-color: #f1f1f1;
+        color: #ec1113;
+      }
+    }
+  }

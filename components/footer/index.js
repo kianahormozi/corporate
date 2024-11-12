@@ -5,11 +5,8 @@ import FooterCopyRight from './FooterCopyRight'
 const Footer = () => {
   return (
     <>
-      <Container>
-        <Row>
-          <FooterContent />
-        </Row>
-      </Container>
+
+      <FooterContent />
       <FooterCopyRight />
     </>
     

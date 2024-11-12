@@ -1,0 +1,27 @@
+.breadcrumb {
+  margin-top: 9.5rem !important;
+}
+
+@media (max-width:768px) {
+  .breadcrumb {
+    margin-top: 5rem !important;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '/';
+  color: #888;
+  padding: 0 0.3rem;
+   
+  margin: 0;
+}
+
+.custom-border-bottom {
+  border-bottom: 1px solid #e5e8ec;
+}
+
+.breadcrumb-item span {
+  display: inline;
+  color: #888;
+  font-size: 13px;
+}

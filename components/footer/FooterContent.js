@@ -5,28 +5,28 @@ import Link from 'next/link';
 const FooterContent = () => {
   const footerLinks = [
     { name: 'خانه', link: '/' },
-    { name: 'درباره ما', link: '/biography' },
-    { name: 'خدمات ما', link: '/biography' },
-    { name: 'اخبار', link: '/repertoire' },
-    { name: 'پروژه‌ها', link: '/repertoire' },
+    { name: 'درباره ما', link: '/aboutUs' },
+    { name: 'خدمات ما', link: '/ourServices' },
+    { name: 'اخبار', link: '/news' },
+    { name: 'پروژه‌ها', link: '/cases' },
     { name: 'آیتم‌ ها' , link: '/repertoire' },
-    { name: 'ارتباط با ما', link: '/about' }
+    { name: 'ارتباط با ما', link: '/contactUs' }
   ];
 
   return (
     <Container className='px-0'>
       <Row className="align-items-start justify-content-between w-100 pb-4 mt-5 h-auto py-5">
-        <Col lg={3} md={12} className="d-flex flex-column justify-content-center mx-md-auto  mx-lg-0 pb-md-5">
+        <Col lg={3} md={6} sm={6} className="d-flex flex-column justify-content-center mx-md-auto pb-sm-5 mx-lg-0 pb-md-5">
             <Col className='pb-4'>
                 <h6>درباره ما</h6>
             </Col>
             <Col>
-                <p className='small text-line-height text-color'>
+                <p className='small text-line-height w-75 text-color'>
                 اژانو به عنوان یکی از فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت امن و سریع، ۵ روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر، اعتماد کاربران گرامی را جلب نماید
                 </p>
             </Col>
         </Col>
-      <Col lg={3} md={12} className="d-flex flex-column justify-content-center mx-md-auto mx-lg-0 pb-md-5">
+      <Col lg={3} md={6} sm={6} className="d-flex flex-column justify-content-center mx-md-auto pb-sm-5 mx-lg-0 pb-md-5">
             <Col className='pb-4'>
                 <h6>ارتباط با ما</h6>
             </Col>
@@ -47,13 +47,13 @@ const FooterContent = () => {
                 <p className="small">mail@example.com</p>
             </Col>
       </Col>
-      <Col lg={3} md={12} className="d-flex flex-column justify-content-center mx-md-auto mx-lg-0 pb-md-5">
+      <Col lg={3} md={6} sm={6} className="d-flex flex-column justify-content-center mx-md-auto mx-lg-0 pb-md-3">
             <Col className='pb-4'>
                 <h6>لینک های مفید</h6>
             </Col>
             <Navbar links={footerLinks} isFooter={true} className="d-flex flex-column p-0" />
       </Col>
-      <Col lg={3} md={12} className="d-flex flex-column justify-content-center mx-md-auto  mx-lg-0 pb-md-5">
+      <Col lg={3} md={6} sm={6} className="d-flex flex-column justify-content-center mx-md-auto  mx-lg-0 pb-md-3">
             <Col className='pb-4'>
                 <h6>شبکه های اجتماعی</h6>
             </Col>

@@ -1,0 +1,27 @@
+.commitment-bg {
+    background-image: url('/images/mission_bg_2.jpg');
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+.commitment-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(34, 34, 34, 0.7);
+    z-index: 1; /* برای لایه‌ی پس‌زمینه */
+}
+
+.commitment-text {
+    position: relative;
+    color: #ffffff;
+    z-index: 2; /* بالاتر از پس‌زمینه‌ی تیره */
+    background: transparent; /* حذف کادر زمینه */
+    padding: 1rem;
+}

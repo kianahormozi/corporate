@@ -4,11 +4,11 @@ const OfficeDetails = () => {
   return (
     <Container className='me-5'>
       <Row>
-    <Col md={4} sm={6} className="position-absolute h-100 d-flex flex-column justify-content-center bg-red text-white px-5 pb-7 p-top-4"> 
+    <Col md={4} sm={6} className="position-absolute h-100 d-flex flex-column justify-content-center bg-red text-white px-5 pb-5 p-top-4"> 
     <h5 className='pb-4'>شرکت برنامه نویسی</h5> 
     <Col className="d-flex mb-4 gap-4 align-items-start"> 
       <div>
-      <i className="bi bi-geo-alt-fill"></i> 
+      <i className="bi bi-geo-alt-fill info-icon"></i> 
       </div>
       <div>
       <p className='fw-bold'>آدرس شرکت</p>
@@ -17,7 +17,7 @@ const OfficeDetails = () => {
     </Col> 
       <Col className="d-flex mb-4 gap-4 align-items-start"> 
         <div>
-        <i className="bi bi-grid-fill"></i> 
+        <i className="bi bi-grid-fill info-icon"></i> 
         </div>
         <div>
         <p className='fw-bold'>شماره تماس</p>
@@ -26,7 +26,7 @@ const OfficeDetails = () => {
         </Col> 
         <Col className="d-flex mb-4 gap-4 align-items-start"> 
         <div>
-          <i className="bi bi-envelope-fill"></i> 
+          <i className="bi bi-envelope-fill info-icon"></i> 
         </div>
           <div>
           <p className='fw-bold'>ایمیل</p>
@@ -35,7 +35,7 @@ const OfficeDetails = () => {
           </Col> 
           <Col className="d-flex gap-4 mb-4 align-items-start"> 
           <div>
-            <i className="bi bi-clock-fill"></i> 
+            <i className="bi bi-clock-fill info-icon"></i> 
           </div>
             <div>
             <p className='fw-bold'>ساعات کاری</p>

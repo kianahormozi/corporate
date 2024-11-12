@@ -9,6 +9,7 @@
 @import 'swiper/scss/autoplay';
 @import 'swiper/css/pagination';
 @import 'swiper/css/navigation';
+@import 'swiper/css/effect-creative';
 
 //components 
 @import 'components/navbar.scss';
@@ -22,6 +23,15 @@
 @import 'components/prices/main.scss';
 @import 'components/TestiMonials/main.scss';
 @import 'components/Quote/main.scss';
+@import 'components/VideoSlide.scss';
+@import 'components/value.scss';
+@import 'components/breadcrumb.scss';
+@import 'components/commitment.scss';
+@import 'components/FrequentlyQuestions/main.scss';
+@import 'components/CompanyContact/main.scss';
+@import 'components/PostCategories/main.scss';
+@import 'components/ServicesContent/main.scss';
+@import 'components/blog/main.scss';
 
 :root {
   direction: ltr;
@@ -32,7 +42,6 @@
   box-sizing: border-box;
   padding: 0 ;
   margin: 0;
-  
 }
 
 html {
@@ -55,7 +64,8 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden; /* جلوگیری از overflow افقی */
+  width: 100%;
   font-family: iransansdn !important;
   direction: rtl;
 }
@@ -75,7 +85,7 @@ a {
   color: #ec1113; 
 }
 
-.text-line-height {
+.text-line-height { 
   line-height: 1.8;
 }  
 
@@ -88,9 +98,17 @@ p{
   height: 100vh; 
 } 
 
+.w-90 {
+  width: 90%;
+}
+
 iframe { 
   border: none; 
 } 
+
+.icon-size {
+  font-size: 70px;
+}
 
 .custom-border-top {
   border-top: 1px solid #fff ;
@@ -134,3 +152,18 @@ iframe {
   border-color: #ec1113;
   color: #fff;
 } 
+
+
+.shadow-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0));
+  z-index: -1;
+}
+
+.info-icon {
+  font-size: 22px;
+}

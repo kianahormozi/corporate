@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'; // اضافه کردن useRef
+import React, { useState, useRef, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import  SwiperCore, { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,15 +9,35 @@ import HeaderBoxes from './HeaderBoxes';
 SwiperCore.use([Autoplay]);
 
 const slides = [
-  { src: "/images/bg-1.jpg", alt: "Slide 1" },
-  { src: "/images/bg-2.jpg", alt: "Slide 2" },
-  { src: "/images/bg-3.jpg", alt: "Slide 3" },
-  { src: "/images/bg-4.jpg", alt: "Slide 4" },
+  { 
+    src: "/images/bg-1.jpg", 
+    alt: "Slide 1", 
+    title: "عنوان اسلاید اول", 
+    text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است" 
+  },
+  { 
+    src: "/images/bg-2.jpg", 
+    alt: "Slide 2", 
+    title: "عنوان اسلاید دوم", 
+    text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است"
+  },
+  { 
+    src: "/images/bg-3.jpg", 
+    alt: "Slide 3", 
+    title: "عنوان اسلاید سوم", 
+    text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم استلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است" 
+  },
+  { 
+    src: "/images/bg-4.jpg", 
+    alt: "Slide 4", 
+    title: "عنوان اسلاید چهارم", 
+    text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است" 
+  },
 ];
 
-const HeaderSlider = () => {
+const HeaderSlider = ({ onSlideChange }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const swiperRef = useRef(null); 
+  const swiperRef = useRef(null);
 
   const handleBoxClick = (index) => {
     setActiveIndex(index);
@@ -25,6 +45,12 @@ const HeaderSlider = () => {
       swiperRef.current.swiper.slideTo(index); 
     }
   };
+
+  useEffect(() => {
+    if (onSlideChange) {
+      onSlideChange(slides[activeIndex].title, slides[activeIndex].text);
+    }
+  }, [activeIndex, onSlideChange]);
 
   return (
     <Container fluid className="p-0">
@@ -46,12 +72,13 @@ const HeaderSlider = () => {
                 width={0}
                 height={0}
                 sizes="150vh"
-                className=" swiper-image"
+                className="swiper-image"
               />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
       <HeaderBoxes activeSlide={activeIndex} setActiveSlide={handleBoxClick} />
     </Container>
   );

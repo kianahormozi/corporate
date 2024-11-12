@@ -27,3 +27,16 @@
     align-items: flex-start;
 }
 
+
+.testimonial-swiper {
+    .swiper-pagination-bullets  {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        min-height: 30px;
+        
+        .swiper-pagination-bullet {
+           
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { Card, CardBody, CardHeader, CardText } from 'react-bootstrap';
 
 const TestiMonialsSlider = ({ Items }) => {
@@ -10,13 +10,12 @@ const TestiMonialsSlider = ({ Items }) => {
     spaceBetween={30}
     loop = {true}
     autoplay = {{
-      delay: 0, 
-      disableOnInteraction: false,
-  }}
-    modules = {{Autoplay}}
-    pagination={{
-      clickable: true,
+        delay: 5000, 
+        disableOnInteraction: false,
     }}
+    modules = {[Autoplay,Pagination]}
+    pagination={true}
+ 
       breakpoints={{
 
         992: {

@@ -1,4 +1,4 @@
-.form-container {
+
   .form-columns {
     column-count: 2;
     column-gap: 2rem;
@@ -8,8 +8,6 @@
     }
     @media (width: 576px) {
       column-count: 1;
-      
-      
     }
   }
   
@@ -32,7 +30,7 @@
     color: #999;
   }
 
-  .form-select {
+  .form-select { 
     direction: rtl;
     text-align: left;
   }
@@ -45,4 +43,32 @@
       background-color: darken(#dc3545, 10%);
     }
   }
+
+.custom-select { 
+  appearance: none; 
+  background: #fff; 
+  padding-right: 1rem; 
+  text-align: right; 
+  color: #999;
+}
+
+.custom-select option {
+  text-align: right; 
+  color: #222;
+}
+
+.InputGroup :active {
+  outline: none;
+}
+
+.no-focus {
+  box-shadow: none !important; 
+  outline: none !important; 
+  border-color: transparent !important; 
+}
+
+.select-icon {
+  left: 11px;
+  top: 18px;
+  color: #999;
 }

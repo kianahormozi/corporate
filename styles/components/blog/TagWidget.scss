@@ -1,0 +1,18 @@
+.tag-link {
+    font-size: 13px;
+    color: #aaa;
+    border: 1px solid #ccc;
+    padding: 6px 14px;
+    margin: 0 12px 8px 0; 
+    text-align: center;
+    transition: all 0.3s ease;
+    width: auto;
+  
+    &:hover {
+      background-color: #ec1113;
+      color: #fff;
+      border-color: #ec1113;
+    }
+  }
+  
+  

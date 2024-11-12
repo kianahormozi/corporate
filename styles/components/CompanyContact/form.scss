@@ -1,0 +1,28 @@
+.form-bg {
+    background-image: url(/images/Quote-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    height: auto;
+}
+
+.form-submit {
+    background-color: #ec1113;
+    border-radius: 25px;
+    color: #fff;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+}
+.form-submit:hover {
+    color: #fff;
+    background-color: #222222;
+}
+
+.form-padding {
+    padding-bottom: 3.4rem;
+}
+
+.form-control {
+    padding: .8rem 0.8rem;
+}

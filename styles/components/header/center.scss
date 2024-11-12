@@ -2,7 +2,7 @@
     height: 100vh; 
     display: flex;
     align-items: right;
-    margin-top: 5.5rem;
+    margin-top: 2.5rem;
   }
   
   .animated-line {
@@ -18,24 +18,24 @@
   @keyframes moveLine {
     0% {
       height: 0;
-      top: 20px; /* تنظیم موقعیت شروع انیمیشن */
+      top: 20px; 
     }
     50% {
       height: 60px;
-      top: 20px; /* خط در میانه مسیر */
+      top: 20px; 
     }
     100% {
       height: 0;
-      top: 80px; /* موقعیت پایین‌تر در پایان انیمیشن */
+      top: 80px; 
     }
   }  
   
   .main-title {
     color: #fff;
-    font-size: 2.5rem;
     font-weight: bold;
     font-size: 50px;
-    padding-right: 2rem;
+    padding-right: 1.8rem;
+    width: max-content;
   }
   
   .description {

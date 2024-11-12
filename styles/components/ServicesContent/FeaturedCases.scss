@@ -1,0 +1,35 @@
+.card-bottom-border {
+    border-bottom: 1px solid #ccc;
+    display: block;
+    width: 100%;
+}
+
+.card-bottom-border:last-child {
+    border-bottom: none; 
+}
+
+.img-width {
+    width: 60px;
+    height: 60px;
+}
+
+.card-top-padding {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-raduis {
+    border-radius: 0;
+}
+
+.sidebar-card-font {
+    font-size: 11px;
+}
+
+.card {
+    transition: transform 0.3s ease;
+
+    &:hover .sidebar-card-font { 
+        color: #ec1113 !important; /* تغییر رنگ تیتر هنگام هاور */
+    }
+}

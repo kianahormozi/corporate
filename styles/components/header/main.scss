@@ -1,62 +1,53 @@
 @import './slider.scss';
 @import './boxes.scss';
 @import './center.scss';
+@import './page.scss';
 
 .header-content {
-    z-index: 2;
-  }
-  
-  .logo-img {
-    width: auto;
-    height: 50px;
-  }
-  
-  .social-links, .contact-info {
-    color: #fff;
-  }
-  
- /* .full-width-border {
-    width: 100%;
-    border-bottom: 1px solid #fff; 
-    margin-bottom: 10px;
-  }
-  */
+  z-index: 2;
 
-  .bottom-line {
-    border-bottom: 1px solid #888;
-  }
-  
-  .left-border {
-    border-right: 1px solid #888; 
-    margin-right: 2.5rem;
-  }
-  
-  .x-padding {
-    padding-right: 2.5rem;
-    padding-left: 0;
-
+  .menu-content {
+    @media (max-width: 768px) {
+      display: none; // Hide the menu content by default on mobile
+    }
   }
 
-  .links {
-    text-decoration: none;
-    padding-bottom: .3rem;
+  .mobile-menu-toggle {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: inline-block;
+      cursor: pointer;
+    }
   }
-  
+
   .header-links {
     display: flex;
     gap: 3.5rem;
     color: #fff;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      gap: 1rem;
+      background-color: #222;
+      padding: 1rem;
+      border-radius: 0;
+    }
   }
-  
+
   .header-list {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s ease;
-  
+
     &:hover {
       color: #ec1113;
     }
-  
+
     &.active {
       color: #fff;
       &:hover {
@@ -64,4 +55,166 @@
       }
     }
   }
+}
+
+.mobile-menu-icon {
+  font-size: 2.5rem;
+  color: #ec1113;
+  transition: all .2s ease;
+}
+
+.logo-img {
+  width: auto;
+  height: 50px;
+}
+
+.social-links,
+.contact-info {
+  color: #fff;
+}
+
+.bottom-line {
+  border-bottom: 1px solid #888;
+  position: relative;
+  z-index: 4;
+}
+
+.left-border {
+  border-right: 1px solid #888;
+  margin-right: 2.5rem;
+}
+
+.x-padding {
+  padding-right: 2.5rem;
+  padding-left: 0;
+}
+
+.links {
+  text-decoration: none;
+  padding-bottom: 0.3rem;
+}
+
+.header-container {
+  .hamburger-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    background: none;
+    border: none;
+    z-index: 5;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// Overlay menu for mobile view
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+
+  .overlay-content {
+    text-align: center;
+    color: #fff;
+
+    .logo-img {
+      margin-bottom: 1.5rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+
+      i {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+    }
+
+    .mobile-menu {
+      list-style: none;
+      padding: 0;
+      margin-top: 2rem;
+
+      li {
+        margin-bottom: 1rem;
+
+        .menu-link {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.2rem;
+          &:hover {
+            color: #ec1113;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Display overlay and toggle for mobile, hide for larger screens
+@media (min-width: 992px) {
+  .overlay {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .header-links {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    .menu-content {
+      display: none; // Ensures main menu is hidden on smaller screens
+    }
+  }
   
+  .overlay {
+    display: flex; // Shows overlay when mobile menu is open
+  }
+
+  .mobile-menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .width-md {
+    width: auto;
+  }
+
+  .icon-display {
+    display: none;
+  }
+
+  .mobile-menu-baackground {
+    background-color: #222;
+    height: 93px;
+  }
+
+  .mobile-menu-list {
+    position: fixed;
+    width: 270px;
+    right: 25px;
+  }
+  
+}
+

@@ -1,0 +1,64 @@
+.accordion .accordion-item {
+    border: none;
+  }
+  
+  /* استایل دکمه سوال */
+  .accordion-header .accordion-button {
+    background-color: #f6f7f8; /* رنگ پس‌زمینه پیش‌فرض */
+    color: #000; /* رنگ متن پیش‌فرض */
+    border: none; /* حذف کادر پیش‌فرض */
+    box-shadow: none; /* حذف سایه پیش‌فرض */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+  
+    &:hover {
+      color: #ec1113; 
+    }
+  }
+  
+  /* استایل در حالت باز (فعال) */
+  .accordion-button:not(.collapsed) { 
+    background-color: #ec1113; /* پس‌زمینه قرمز در حالت باز */
+    color: #fff; /* متن سفید در حالت باز */
+  }
+  
+  /* حفظ رنگ سفید متن و آیکون در حالت فعال و هاور */
+  .accordion-button:not(.collapsed):hover {
+    color: #fff; 
+  }
+  
+  /* استایل آیکون در حالت باز */
+  .accordion-button:not(.collapsed) .icon-toggle {
+    color: #fff; 
+    transform: rotate(180deg); 
+  }
+  
+  /* حذف کادر آبی پیش‌فرض هنگام فعال بودن */ 
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .accordion-body {
+    padding-bottom: 1rem;
+    background-color: #fff; 
+    color: #333;
+  }
+
+// مخفی کردن آیکون پیش‌فرض
+.accordion-button::after {
+    display: none;
+  }
+  
+  // استایل آیکون سفارشی
+  .icon-toggle {
+    transition: transform 0.3s;
+  }
+  
+  // چرخش آیکون در حالت باز
+  .rotate-icon {
+    transform: rotate(180deg);
+  }
+  

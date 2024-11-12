@@ -1,0 +1,127 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+.blog-card {
+    border: 1px solid #e6e6e6;
+    transition: all .25s ease !important;
+
+    &:hover {
+        box-shadow: 0 10px 28px rgba(0,0,0,.1),0 8px 8px rgba(0,0,0,.07);
+        border-color: transparent;
+    }
+}
+
+.blog-image {
+    object-fit: cover;
+    height: 100%;
+    border: none;
+}
+
+.blog-card-body {
+    overflow: hidden;
+    flex: 1;
+    padding: 26px 30px 0;
+}
+
+.blog-card-link {
+    transition: all .25s ease !important;
+}
+
+.blog-card-title {
+    white-space: nowrap;
+    display: block;
+    margin-bottom: 12px;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    line-height: 24px;
+    color: #23282d;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.date {
+    background-color: #ec1113 !important;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.day {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 0 0 5px;
+}
+
+.month {
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+    display: block;
+}
+
+.pagination {
+    display: flex;
+    gap: 8px;
+  
+    .page-item {
+      &.active .page-link {
+        background-color: #ec1113; 
+        color: #fff;
+        font-weight: bold;
+        border: none;
+  
+        &:hover {
+          background-color: #ec1113; 
+        }
+      }
+  
+      .page-link {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e9ecef;
+        color: #000;
+        border: none;
+        transition: background-color 0.2s ease;
+        outline: none; 
+        box-shadow: none; 
+  
+        &:hover {
+          background-color: #ec1113;
+          color: #fff;
+        }
+      }
+  
+       &.next {
+        .page-link {
+          background-color: transparent;
+          color: #000;
+          font-size: 1.2rem;
+          padding: 0;
+  
+          &:hover {
+            color: #ec1113; 
+          }
+        }
+      }
+    }
+  }
