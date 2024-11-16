@@ -9,3 +9,24 @@
 .bg-red {
     background-color: #ec1113;
 } 
+
+.office-display-size {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.gap-displaye {
+    gap: 2.5rem;
+}
+
+/* تنظیمات خاص برای سایز کمتر از 400 پیکسل */
+@media (max-width: 400px) {
+    .map-height {
+        height: 400px; /* ارتفاع نقشه */
+    }
+    .office-display-size {
+        width: 100%; /* عرض کامل برای باکس قرمز */
+        padding: 2rem;
+        margin-top: 0; /* حذف فاصله */
+    }
+}

@@ -52,30 +52,30 @@ const Data = [
 ]
 const ServicesData = () => {
   return (
-    <Container className='px-0'>
-      <Row className='d-flex'>
-        {Data.map ((cardData,index) => (
-        <Col key={index} lg={4} md={6} sm={12} className='pb-4 pt-5'>
-          <Link href="/" passHref className="text-decoration-none services-link">
-          <Card className='h-100'>
-              <Image 
-              src={cardData.dataImg}
-              width="300"
-              height="280"
-              sizes=''
-              alt='/' 
-              className='services-img'
-              />
-            <CardBody className='pb-4 mx-2 data-card'>
-                <h6 className='py-3 fw-bold text-line-height'>
-                  {cardData.dataTitle}
-                </h6>
-              <CardText className='text-font text-line-height'>
-                {cardData.dataText}
-              </CardText>
-            </CardBody>
-          </Card>
-          </Link>
+    <Container className="px-0">
+      <Row className="d-flex">
+        {Data.map((cardData, index) => (
+          <Col 
+            key={index} lg={4}  md={4}  sm={6}  xs={12} className="pb-4 pt-5" >
+            <Link href="/" passHref className="text-decoration-none services-link">
+              <Card className="h-100">
+                <Image 
+                  src={cardData.dataImg}
+                  width="300"
+                  height="280"
+                  alt={cardData.dataTitle} 
+                  className="services-img" 
+                />
+                <Card.Body className="pb-4 mx-2 data-card">
+                  <h6 className="py-3 fw-bold text-line-height">
+                    {cardData.dataTitle}
+                  </h6>
+                  <Card.Text className="text-font text-line-height">
+                    {cardData.dataText}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Link>
           </Col>
         ))}
       </Row>

@@ -21,8 +21,8 @@ const excellenceItems = [
 ]
 const Excellence = () => {
   return (
-    <Container className='py-lg-4 py-md-5'>
-      <Row className='d-flex flex-lg-row flex-sm-column pb-4'>
+    <Container className='py-4 '>
+      <Row className='d-flex py-content excellence-display pb-4'>
         <Col className=''>
             <Col className='pb-5'>
             <h5>چرا ما</h5>
@@ -41,24 +41,24 @@ const Excellence = () => {
                 </CardBody>
             </Card>
         </Col>
-        <Col className=''>
+        <Col className='py-content'>
             <Col className='pb-lg-5'>
             <h5>ویژگی های ما</h5>
             </Col>
             {excellenceItems.map ((items,index) => (
-                        <div className='d-flex flex-row gap-5 pb-4'>
-                            <Col lg={3} className='w-auto'>
+                    <div className='d-flex flex-row gap-5 pb-4'>
+                        <Col lg={3} className='w-auto'>
                             <i className={`bi ${items.icon} red-color icon-size`}></i>
-                            </Col>
-                            <Col lg={9} className='d-flex flex-column'>
-                                <Col>
-                                   <h6 className='text-bold pb-2'> {items.title} </h6>
-                                    <p className='text-font'>
+                        </Col>
+                        <Col lg={9} className='d-flex flex-column'>
+                            <Col>
+                                <h6 className='text-bold pb-2'> {items.title} </h6>
+                                <p className='text-font'>
                                        {items.text}
-                                    </p>
-                                </Col>
+                                </p>
                             </Col>
-                        </div>
+                        </Col>
+                    </div>
             ))}
         </Col>
       </Row>

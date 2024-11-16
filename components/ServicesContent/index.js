@@ -1,9 +1,9 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import ServicesData from './ServicesData'
-import FeaturedCases from './FeaturedCases'
-import ServicesSlider from './ServicesSlider' 
-import ServicesGallery from './ServicesGallery'
+import ServicesData from './servicesData'
+import FeaturedCases from './featuredCases'
+import ServicesSlider from './servicesSlider' 
+import ServicesGallery from './servicesGallery'
 const ServicesContent = () => {
   return (
     <div className='position-relative'>
@@ -18,7 +18,7 @@ const ServicesContent = () => {
           </p>
           <ServicesData />
         </Col>
-        <Col lg={3} className='pe-4 h-100'>
+        <Col lg={3} className='pe-4 h-100 services-display'>
           <h6 className='pt-3 fw-bold'>
           پرونده‌های منتخب
           </h6>

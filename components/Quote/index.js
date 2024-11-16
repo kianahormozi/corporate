@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import QuoteForm from './QuoteForm';
+import QuoteForm from './quoteForm';
 
 const Quote = () => {
   return (

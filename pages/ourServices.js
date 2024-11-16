@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-const BreadcrumbComponent = dynamic ( import ( '@/components/Breadcrumb'));
+const BreadcrumbComponent = dynamic ( import ( '@/components/breadCrumb'));
 const AppContent = dynamic ( import ( '@/components/content'));
 const ServicesContent = dynamic ( import ('@/components/ServicesContent'));
 const OurServices = () => {

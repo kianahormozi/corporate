@@ -22,7 +22,9 @@ const BusinessSlider = ({ slides, settings }) => {
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
           <Card className="border-0 bg-transparent">
+            <Link href='/'>
             <CardImg className="bussiness-img" variant="top" src={slide.image} alt={slide.title} />
+            </Link>
             <CardBody className="px-0">
               <Link href={slide.title} ><CardTitle className="fw-bold primary-color title">{slide.title}</CardTitle> </Link>
               <CardText className="text-font">{slide.description}</CardText>

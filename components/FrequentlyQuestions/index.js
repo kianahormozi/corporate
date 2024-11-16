@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
-import ImageSection from './ImageSection';
-import FaqSection from './FaqSection';
+import ImageSection from './imageSection';
+import FaqSection from './faqSection';
 
 const FrequentlyQuestions = () => {
   return (

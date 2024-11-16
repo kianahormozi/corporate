@@ -3,6 +3,10 @@
     padding: 0;
     position: relative;
     border: none;
+
+    @media (max-width: 768px) {
+      padding-top: 2rem;
+    }
   }
   
   .about-us-title {

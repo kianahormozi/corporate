@@ -1,5 +1,5 @@
 import React from 'react'
-import AdvantagesItems from './AdvantagesItems'
+import AdvantagesItems from './advantagesItems'
 import { Container } from 'react-bootstrap'
 const Advantages = () => {
   return (

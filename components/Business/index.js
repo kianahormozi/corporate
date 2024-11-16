@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Col, Container, Row, Card, CardBody, CardText, CardTitle } from 'react-bootstrap';
-import BusinessSlider from './BusinessSlider';
+import BusinessSlider from './businessSlider';
 
 const slides = [
   {

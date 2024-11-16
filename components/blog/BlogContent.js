@@ -139,7 +139,7 @@ const BlogContent = () => {
                                     <span className='month'>{blogitem.blogMonth}</span>
                                 </div>
                                 <Image
-                                    src={blogitem.blogImg}
+                                    src={blogitem.blogImg} 
                                     width={350}
                                     height={220}
                                     alt={blogitem.blogTitle}

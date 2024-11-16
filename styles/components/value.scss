@@ -15,3 +15,12 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
+@media (max-width: 768px) {
+  .value-content {
+    order: 1; /* برای اینکه قسمت قرمز بالاتر قرار بگیره*/
+  }
+  .value-image-container {
+    order: 2; 
+  }
+}

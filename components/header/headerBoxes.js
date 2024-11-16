@@ -14,9 +14,10 @@ const HeaderBoxes = ({ activeSlide, setActiveSlide }) => {
         {boxes.map((box) => (
           <Col
             key={box.id}
-            xs={6}
-            md={6}
-            lg={3}
+            xs={12}  
+            sm={6}
+            md={6}  
+            lg={3}  
             className={`box ${activeSlide === box.id ? 'active' : ''}`}
             onClick={() => setActiveSlide(box.id)}
           >

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import dynamic from 'next/dynamic';
-const CategoryItems = dynamic ( import ('@/components/PostCategories/CategoryItems'));
+const CategoryItems = dynamic ( import ('@/components/PostCategories/categoryItems'));
 const PostCategories = () => {
   return (
     <div className='position-relative '> 

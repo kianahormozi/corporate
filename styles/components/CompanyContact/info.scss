@@ -1,3 +1,4 @@
+/* تنظیمات اولیه برای سایز دسکتاپ */
 .info-bg {
     background-image: url(/images/pattern.jpg);
     background-size: cover;
@@ -5,4 +6,24 @@
     z-index: 1;
     height: auto;
     position: relative;
+}
+
+/* تنظیمات برای نمایش تمام عرض در سایزهای کوچک‌تر از 768 پیکسل */
+@media (max-width: 768px) {
+    .company-content .col-lg-4, 
+    .company-content .col-lg-8 {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* تنظیمات برای نمایش تمام عرض در سایزهای کوچک‌تر از 576 پیکسل */
+@media (max-width: 576px) {
+    .company-content .col-lg-4,
+    .company-content .col-lg-8 {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

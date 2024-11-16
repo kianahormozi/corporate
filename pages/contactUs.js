@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import React from 'react'
-import Business from '@/components/Business';
 const OfficeMap = dynamic ( import ('@/components/OfficeMap'));
 const AppContent = dynamic ( import ('@/components/content'));
 const CompanyContact = dynamic ( import ('@/components/CompanyContact'));

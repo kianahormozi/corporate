@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import TestiMonialsSlider from './TestiMonialsSlider'
+import TestiMonialsSlider from './testiMonialsSlider'
 
 const TestimonialsItems = [
     {text: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است کی از مهم‌ترین رویدادهای هنری سال' , name:"Barzek56" , career:"Manager at ColdHawk Inc."},

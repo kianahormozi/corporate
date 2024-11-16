@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoSlide from './VideoSlide';
+import VideoSlide from './videoSlide';
 import { Card, Col, Container, Row , CardText , CardTitle} from 'react-bootstrap';
 
 const CompanyOverview = () => {
@@ -15,8 +15,8 @@ const CompanyOverview = () => {
         </Col>
 
         {/* Col for Text */}
-        <Col lg={6} md={12} sm={12} className="order-md-2 pt-sm-4 pt-md-4 order-sm-2">
-          <Card className="border-0">
+        <Col lg={6} md={12} sm={12} className="order-md-2 pt-sm-4 pt-md-4 order-sm-2 ">
+          <Card className="border-0 overview ">
             <Card.Body className="px-0">
               <Card.Title className="pb-4 fs-3">
                 تمرکز بر اتحاد و هدف مشترک 

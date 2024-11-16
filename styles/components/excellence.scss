@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    .py-content {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+
+.excellence-display {
+    @media (min-width: 992px){
+    display: flex;
+    flex-direction: row;
+    }
+
+@media (max-width:576px) {
+    display: flex;
+    flex-direction: column;
+}
+}

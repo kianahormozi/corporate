@@ -4,9 +4,9 @@ const OfficeDetails = () => {
   return (
     <Container className='me-5'>
       <Row>
-    <Col md={4} sm={6} className="position-absolute h-100 d-flex flex-column justify-content-center bg-red text-white px-5 pb-5 p-top-4"> 
-    <h5 className='pb-4'>شرکت برنامه نویسی</h5> 
-    <Col className="d-flex mb-4 gap-4 align-items-start"> 
+    <Col md={4} sm={6} className="position-absolute office-display-size h-100 d-flex flex-column justify-content-center bg-red text-white pb-5 p-top-4"> 
+    <h5 className='pb-5 pt-5 fw-bold'>شرکت برنامه نویسی</h5> 
+    <Col className="d-flex mb-5 gap-displaye align-items-start"> 
       <div>
       <i className="bi bi-geo-alt-fill info-icon"></i> 
       </div>
@@ -15,7 +15,9 @@ const OfficeDetails = () => {
       <p className='opacity-75'>تهران، خیابان ولیعصر، خیابان انقلاب، پلاک ۱۲۳، واحد ۴</p> 
       </div>
     </Col> 
-      <Col className="d-flex mb-4 gap-4 align-items-start"> 
+      <Col className="d-flex mb-5 gap-displaye align-items-start">
+      
+      
         <div>
         <i className="bi bi-grid-fill info-icon"></i> 
         </div>
@@ -24,7 +26,7 @@ const OfficeDetails = () => {
         <p className='opacity-75'>09166831364</p> 
         </div>
         </Col> 
-        <Col className="d-flex mb-4 gap-4 align-items-start"> 
+        <Col className="d-flex mb-5 gap-displaye align-items-start"> 
         <div>
           <i className="bi bi-envelope-fill info-icon"></i> 
         </div>
@@ -33,7 +35,7 @@ const OfficeDetails = () => {
           <p className='opacity-75'>service@medic-all.com</p>
           </div> 
           </Col> 
-          <Col className="d-flex gap-4 mb-4 align-items-start"> 
+          <Col className="d-flex gap-displaye mb-5 align-items-start"> 
           <div>
             <i className="bi bi-clock-fill info-icon"></i> 
           </div>

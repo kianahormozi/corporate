@@ -9,7 +9,7 @@ const HeaderCenter = ({ slideTitle, slideText }) => {
         <Col lg={8}>
           <div className="title-container position-relative pb-4">
             <div className="animated-line"></div> 
-            <p className="main-title">{slideTitle}</p>
+            <p className="main-title">{slideTitle}</p> 
           </div>
           <p className="description pb-5">{slideText}</p>
           <Link href='/' className="link-button">ادامه مطلب</Link>

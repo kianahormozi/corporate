@@ -1,4 +1,10 @@
-@import './Content.scss';
-@import './Subscribe.scss';
-@import './TagWidget.scss';
-@import './SearchBox.scss';
+@import './content.scss';
+@import './subscribe.scss';
+@import './tagWidget.scss';
+@import './searchBox.scss';
+
+@media (max-width:768px) {
+    .blog-display {
+        display: none;
+    }
+}

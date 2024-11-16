@@ -2,3 +2,9 @@
 @import './FeaturedCases.scss';
 @import './ServicesSlider.scss';
 @import './ServicesGallery.scss';
+
+@media (max-width:768px) {
+    .services-display {
+        display: none;
+    }
+}

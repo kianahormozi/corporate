@@ -16,14 +16,14 @@
 @import 'components/footer.scss';
 @import 'components/Office/main.scss';
 @import 'components/Header/main.scss';
-@import 'components/aboutUs/main.scss';
+@import 'components/AboutUs/main.scss';
 @import 'components/advantagesItems.scss';
 @import 'components/Bussines/main.scss';
-@import 'components/ThemeSalesReport.scss';
+@import 'components/themeSalesReport.scss';
 @import 'components/prices/main.scss';
 @import 'components/TestiMonials/main.scss';
 @import 'components/Quote/main.scss';
-@import 'components/VideoSlide.scss';
+@import 'components/videoSlide.scss';
 @import 'components/value.scss';
 @import 'components/breadcrumb.scss';
 @import 'components/commitment.scss';
@@ -32,6 +32,7 @@
 @import 'components/PostCategories/main.scss';
 @import 'components/ServicesContent/main.scss';
 @import 'components/blog/main.scss';
+@import 'components/excellence.scss';
 
 :root {
   direction: ltr;
@@ -58,13 +59,12 @@ html {
   }
 }
 
-
 .container-fluid {
   --bs-gutter-x:0; 
 }
 
 body {
-  overflow-x: hidden; /* جلوگیری از overflow افقی */
+  overflow-x: hidden;
   width: 100%;
   font-family: iransansdn !important;
   direction: rtl;
@@ -166,4 +166,11 @@ iframe {
 
 .info-icon {
   font-size: 22px;
+}
+
+@media (max-width: 768px) {
+  .overview {
+    padding-top: 2rem;
+  }
+
 }

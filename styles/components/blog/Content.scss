@@ -19,6 +19,21 @@
     object-fit: cover;
     height: 100%;
     border: none;
+    width: 350px;
+
+    @media (max-width:576px) {
+      width: 150px !important;
+    }
+    
+    @media (max-width:768px) {
+      width: 190px !important;
+      
+    }
+
+    @media (max-width:480px) {
+      width: 140px !important;
+      
+    }
 }
 
 .blog-card-body {

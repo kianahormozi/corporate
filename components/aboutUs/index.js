@@ -11,7 +11,7 @@ const AboutUs = () => {
     return (
         <Container className="about-us-section" ref={ref}>
             <Row className="align-items-center position-relative">
-                <Col lg={6} md={12} sm={12}> 
+                <Col lg={6} md={12} sm={12} xs={12}> 
                     <Card className="border-0">
                         <Card.Body>
                             <div className="about-us-title d-flex pb-4">
