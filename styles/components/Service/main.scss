@@ -1,0 +1,21 @@
+@import './Data.scss';
+@import './featuredCases.scss';
+@import './Gallery.scss';
+@import './Pie.scss';
+@import './Slider.scss';
+
+@media (max-width:768px) {
+    .services-display {
+        display: none;
+    }
+}
+
+.slug-notice {
+    background-color: #eeeff2;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 26px 30px;
+    font-style: normal;
+    color: #222;
+    border-right: 5px solid #ec1113;
+}

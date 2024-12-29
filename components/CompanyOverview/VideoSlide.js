@@ -18,6 +18,7 @@ const VideoSlide = ({ videoUrl, thumbnail }) => {
           alt="Video Thumbnail"
           width={480}
           height={450}
+          className='video-xs-display'
         />
       </div>
 

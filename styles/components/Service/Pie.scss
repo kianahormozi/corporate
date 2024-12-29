@@ -1,0 +1,9 @@
+.pie-text {
+    color: #222;
+    opacity: .5;
+    font-size: 12px;
+    transition: all ease-in-out .3s;
+    &:hover {
+        opacity: 1;
+    }
+}

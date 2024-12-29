@@ -27,6 +27,9 @@ const TestiMonialsSlider = ({ Items }) => {
         576: {
           slidesPerView: 1, 
         },
+        480: {
+          slidesPerView:1,
+        }
       }}
       className="testimonial-swiper"
     >

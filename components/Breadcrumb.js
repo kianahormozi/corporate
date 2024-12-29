@@ -1,5 +1,6 @@
-import { Breadcrumb, Container } from 'react-bootstrap';
+import {  Container } from 'react-bootstrap';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const BreadcrumbComponent = () => {
   const router = useRouter();
@@ -8,30 +9,30 @@ const BreadcrumbComponent = () => {
   const translations = {
     '': 'خانه',
     'aboutUs': 'درباره ما',
-    'ourServices': 'خدمات ما',
-    'news': 'اخبار',
+    'service': 'خدمات ما',
+    'new': 'اخبار',
     'cases': 'پروژه‌ها',
     'repertoire': 'آیتم‌ها',
-    'contactUs': 'ارتباط با ما'
+    'contactUs': 'ارتباط با ما',
   };
 
   return (
-    <Container className='p-0 '>
+    <Container className="p-lg-0 padding-sm">
       <nav aria-label="breadcrumb">
-        <Breadcrumb className="breadcrumb custom-border-bottom">
-          <Breadcrumb.Item href="/">
-            <span>خانه</span>
-          </Breadcrumb.Item>
+        <ul className="breadcrumb custom-border-bottom pb-3">
+          <li className="breadcrumb-item">
+            <Link href="/">خانه</Link>
+          </li>
           {pathSegments.map((segment, index) => {
             const href = `/${pathSegments.slice(0, index + 1).join('/')}`;
             const translatedSegment = translations[segment] || segment;
             return (
-              <Breadcrumb.Item key={href} href={href}>
-                <span>{translatedSegment}</span>
-              </Breadcrumb.Item>
+              <li className="breadcrumb-item" key={href}>
+                <Link href={href}>{translatedSegment}</Link>
+              </li>
             );
           })}
-        </Breadcrumb>
+        </ul>
       </nav>
     </Container>
   );

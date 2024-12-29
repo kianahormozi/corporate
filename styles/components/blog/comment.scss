@@ -1,0 +1,23 @@
+.user-name {
+    font-size: 15px;
+    transition: all .25s ease !important;
+    text-decoration: none;
+    &:hover {
+        border-bottom: 1px solid #ec1113;
+    }
+}
+
+.date-hour {
+    color: #888;
+    font-size: 13px;
+    text-transform: none;
+    transition: all .4s ease-in-out !important;
+    &:hover {
+        border-bottom: 1px solid #ec1113;
+        color: #ec1113;
+    }
+}
+
+.between-line {
+    color: #888;
+}

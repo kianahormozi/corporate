@@ -1,12 +1,12 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import BlogContent from './blogContent'
-import ServicesGallery from '../ServicesContent/servicesGallery'
-import ServicesSlider from '../ServicesContent/servicesSlider'
-import FeaturedCases from '../ServicesContent/featuredCases'
-import BlogSubscribe from './blogSubscribe'
-import BlogTagWidget from './blogTagWidget'
-import BlogSearchBox from './blogSearchBox'
+import BlogContent from './Content'
+import ServicesGallery from '../Services/Gallery'
+import ServicesSlider from '../Services/Slider'
+import FeaturedCases from '../Services/featuredCases'
+import BlogSubscribe from './Subscribe'
+import BlogTagWidget from './TagWidget'
+import BlogSearchBox from './SearchBox'
 
 const Blog = () => {
   return (

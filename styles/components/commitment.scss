@@ -15,13 +15,13 @@
     left: 0;
     right: 0;
     background-color: rgba(34, 34, 34, 0.7);
-    z-index: 1; /* برای لایه‌ی پس‌زمینه */
+    z-index: 1; 
 }
 
 .commitment-text {
     position: relative;
     color: #ffffff;
-    z-index: 2; /* بالاتر از پس‌زمینه‌ی تیره */
-    background: transparent; /* حذف کادر زمینه */
+    z-index: 2;
+    background: transparent;
     padding: 1rem;
 }

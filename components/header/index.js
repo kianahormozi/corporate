@@ -14,8 +14,8 @@ const Header = () => {
   const headerLinks = [
     { name: 'خانه', link: '/' },
     { name: 'درباره ما', link: '/aboutUs' },
-    { name: 'خدمات ما', link: '/ourServices' },
-    { name: 'اخبار', link: '/news' },
+    { name: 'خدمات ما', link: '/service' },
+    { name: 'اخبار', link: '/new' },
     { name: 'پروژه‌ها', link: '/cases' },
     { name: 'ارتباط با ما', link: '/contactUs' },
     { name: 'آیتم‌ها', link: '/aboutUs', submenu: [
@@ -77,7 +77,7 @@ const Header = () => {
         </div>
         <div className='mobile-menu-baackground'>
           <Container className="header-content pt-2">
-            <Row className="align-items-center justify-content-between pt-2">
+            <Row className="align-items-center justify-content-between padding-x-md pt-2">
               <Col lg="auto" className='width-md'>
                 <div className="mobile-menu-toggle d-lg-none" onClick={toggleMobileMenu}>
                   <i className={`bi ${isMobileMenuOpen ? 'bi-x' : 'bi-list'} mobile-menu-icon`} ></i>
@@ -102,13 +102,15 @@ const Header = () => {
                 </div>
               </Col>
               <Col lg="auto" className="px-0 width-md">
-                <Image
-                  src="/images/logo.svg"
-                  width={0}
-                  height={0}
-                  alt="Logo"
-                  className="logo-img"
-                />
+              <Link href="/" >
+                  <Image
+                    src="/images/logo.svg"
+                    width={0}
+                    height={0}
+                    alt="Logo"
+                    className="logo-img"
+                  />
+                </Link>
               </Col>
             </Row>
             <HeaderCenter slideTitle={slideTitle} slideText={slideText} />

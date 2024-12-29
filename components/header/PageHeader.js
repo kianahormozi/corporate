@@ -10,8 +10,8 @@ const PageHeader = ({ headerImage, headerText }) => {
     const headerLinks = [
       { name: 'خانه', link: '/' },
       { name: 'درباره ما', link: '/aboutUs' },
-      { name: 'خدمات ما', link: '/ourServices' },
-      { name: 'اخبار', link: '/news' },
+      { name: 'خدمات ما', link: '/service' },
+      { name: 'اخبار', link: '/new' },
       { name: 'پروژه‌ها', link: '/cases' },
       { name: 'ارتباط با ما', link: '/contactUs' },
       { name: 'آیتم‌ها', link: '/repertoi', submenu: [ 
@@ -71,7 +71,7 @@ const PageHeader = ({ headerImage, headerText }) => {
         </div>
                 <div className='mobile-menu-baackground position-relative'>
                 <Container className="header-content pt-2">
-                    <Row className="align-items-center justify-content-between pt-3">
+                    <Row className="align-items-center justify-content-between padding-x-md pt-3">
                         <Col lg="auto" className='width-md'>
                             <div className="mobile-menu-toggle d-lg-none" onClick={toggleMobileMenu}>
                                 <i className={`bi ${isMobileMenuOpen ? 'bi-x' : 'bi-list'} mobile-menu-icon`} ></i>

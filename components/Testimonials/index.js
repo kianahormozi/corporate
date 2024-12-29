@@ -14,7 +14,7 @@ const TestimonialsItems = [
 const Testimonials = () => {
   return (
     <section className='testimonials-bg'>
-      <Container className='testimonials-content pb-5'>
+      <Container className='testimonials-content xs-content pb-5'>
           <Row className="pt-5 d-flex justify-content-center"> 
               <Col lg={8} className="pt-4 d-flex justify-content-center">
                 <div className="d-flex pb-4">

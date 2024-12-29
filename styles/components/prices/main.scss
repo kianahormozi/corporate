@@ -32,3 +32,10 @@
    height: 2px;
    background-color: #aaaaaa;
  }
+
+ @media (max-width:480px) {
+  .xs-display {
+    width: 90%;
+    padding-bottom: 3rem;
+  }
+ }

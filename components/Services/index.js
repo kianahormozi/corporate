@@ -1,13 +1,13 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import ServicesData from './servicesData'
+import ServicesData from './Data'
 import FeaturedCases from './featuredCases'
-import ServicesSlider from './servicesSlider' 
-import ServicesGallery from './servicesGallery'
+import ServicesSlider from './Slider' 
+import ServicesGallery from './Gallery'
 const ServicesContent = () => {
   return (
     <div className='position-relative'>
-    <Container className='py-5 px-0'>
+    <Container className='py-5 px-lg-0 padding-sm'>
     <Row className='pt-0'>
         <Col lg={9} className='d-flex flex-column'>
           <h3 className='pb-4 fw-bold'>

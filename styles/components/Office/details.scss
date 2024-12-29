@@ -18,15 +18,20 @@
 .gap-displaye {
     gap: 2.5rem;
 }
-
-/* تنظیمات خاص برای سایز کمتر از 400 پیکسل */
-@media (max-width: 400px) {
-    .map-height {
-        height: 400px; /* ارتفاع نقشه */
-    }
+@media (max-width:768px) {
     .office-display-size {
-        width: 100%; /* عرض کامل برای باکس قرمز */
-        padding: 2rem;
-        margin-top: 0; /* حذف فاصله */
+        width: 50%;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        right: 0;
+    }
+}
+@media (max-width:480px) {
+    .office-display-size {
+        width: 50%;
+        right: 0;
+        font-size: 12px;
+        padding-left: 2px;
+        padding-right: 2rem;
     }
 }

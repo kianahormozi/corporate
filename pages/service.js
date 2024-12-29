@@ -3,8 +3,8 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 const BreadcrumbComponent = dynamic ( import ( '@/components/breadCrumb'));
 const AppContent = dynamic ( import ( '@/components/content'));
-const ServicesContent = dynamic ( import ('@/components/ServicesContent'));
-const OurServices = () => {
+const ServicesContent = dynamic ( import ('@/components/Services'));
+const Service = () => {
   return (
     <>
     <Head>
@@ -20,4 +20,4 @@ const OurServices = () => {
   )
 }
 
-export default OurServices
+export default Service

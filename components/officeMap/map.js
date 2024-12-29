@@ -4,11 +4,11 @@ import { Col } from 'react-bootstrap';
 const Map = () => {
     return (
         <Col
-            lg={12}
-            md={12}
-            sm={12}
-            xs={12}
-            className="p-0 map-height" // ارتفاع نقشه با کلاس map-height تنظیم می‌شود
+            lg={12} // در سایز دسکتاپ دو سوم صفحه
+            md={12} // در سایز 768px تا 992px دو سوم صفحه
+            sm={12} // در سایز 576px تا 768px کل صفحه
+            xs={12} // در سایز کمتر از 576px کل صفحه
+            className="p-0 map-height " // ترتیب نمایش فقط در موبایل
         >
             <iframe
                 title="map"

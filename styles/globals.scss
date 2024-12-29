@@ -30,7 +30,7 @@
 @import 'components/FrequentlyQuestions/main.scss';
 @import 'components/CompanyContact/main.scss';
 @import 'components/PostCategories/main.scss';
-@import 'components/ServicesContent/main.scss';
+@import 'components/Service/main.scss';
 @import 'components/blog/main.scss';
 @import 'components/excellence.scss';
 
@@ -89,6 +89,18 @@ a {
   line-height: 1.8;
 }  
 
+.line-height {
+  line-height: 2.5 !important;
+}
+
+.pie-item-style {
+  font-size: 10px;
+}
+
+.list-style {
+  list-style: none;
+}
+
 p{
   margin: 0;
   line-height: 1.7;
@@ -117,7 +129,7 @@ iframe {
 .vertical-line {
   width: 60px;
   height: 2px;
-  background-color: #aaaaaa;
+  background-color: #aaaaaa; 
 }
 
 .text-font { 
@@ -168,9 +180,21 @@ iframe {
   font-size: 22px;
 }
 
-@media (max-width: 768px) {
-  .overview {
-    padding-top: 2rem;
-  }
+.overview {
 
+  @media (max-width: 768px) {
+    padding-top: 2rem;
+  } 
+
+  @media (max-width:480px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
+
+@media (max-width:480px) {
+  .padding-sm {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+} 

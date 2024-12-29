@@ -15,9 +15,7 @@ const OfficeDetails = () => {
       <p className='opacity-75'>تهران، خیابان ولیعصر، خیابان انقلاب، پلاک ۱۲۳، واحد ۴</p> 
       </div>
     </Col> 
-      <Col className="d-flex mb-5 gap-displaye align-items-start">
-      
-      
+      <Col className="d-flex mb-5 gap-displaye align-items-start"> 
         <div>
         <i className="bi bi-grid-fill info-icon"></i> 
         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
-import FooterContent from './footerContent'
+import FooterContent from './Content'
 import { Container, Row } from 'react-bootstrap'
-import FooterCopyRight from './footerCopyRight'
+import FooterCopyRight from './CopyRight'
 const Footer = () => {
   return (
     <>

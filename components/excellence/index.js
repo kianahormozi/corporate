@@ -41,8 +41,8 @@ const Excellence = () => {
                 </CardBody>
             </Card>
         </Col>
-        <Col className='py-content'>
-            <Col className='pb-lg-5'>
+        <Col className='padding-top-md'>
+            <Col className='pb-5'>
             <h5>ویژگی های ما</h5>
             </Col>
             {excellenceItems.map ((items,index) => (

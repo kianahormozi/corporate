@@ -12,7 +12,7 @@ const AboutUs = () => {
         <Container className="about-us-section" ref={ref}>
             <Row className="align-items-center position-relative">
                 <Col lg={6} md={12} sm={12} xs={12}> 
-                    <Card className="border-0">
+                    <Card className="border-0 padding-bottom-xs">
                         <Card.Body>
                             <div className="about-us-title d-flex pb-4">
                                 <h5 className="red-color me-2">درباره ما</h5>
@@ -49,11 +49,11 @@ const AboutUs = () => {
                         />
                     </div>
                 </Col>
-                <Col md={12} className="text-center pt-sm-5 pt-md-5 d-lg-none">
+                <Col md={12} className="text-center pt-sm-5 pt-md-5 padding-x-xs d-lg-none">
                     <img 
                         src="/images/about-1.jpg" 
                         alt="Business News Simple" 
-                        className="w-100 h-auto"
+                        className="w-100 h-auto px-xs-3"
                     />
                 </Col>
             </Row>

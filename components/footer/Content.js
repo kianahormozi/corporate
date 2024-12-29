@@ -6,7 +6,7 @@ const FooterContent = () => {
   const footerLinks = [
     { name: 'خانه', link: '/' },
     { name: 'درباره ما', link: '/aboutUs' },
-    { name: 'خدمات ما', link: '/ourServices' },
+    { name: 'خدمات ما', link: '/Service' },
     { name: 'اخبار', link: '/news' },
     { name: 'پروژه‌ها', link: '/cases' },
     { name: 'آیتم‌ ها' , link: '/repertoire' },
@@ -14,7 +14,7 @@ const FooterContent = () => {
   ];
 
   return (
-    <Container className='px-0'>
+    <Container className='p-lg-0 padding-sm'>
       <Row className="align-items-start justify-content-between w-100 pb-4 mt-5 h-auto py-5">
         <Col lg={3} md={6} sm={6} className="d-flex flex-column justify-content-center mx-md-auto pb-sm-5 mx-lg-0 pb-md-5">
             <Col className='pb-4'>
@@ -27,7 +27,7 @@ const FooterContent = () => {
             </Col>
         </Col>
       <Col lg={3} md={6} sm={6} className="d-flex flex-column justify-content-center mx-md-auto pb-sm-5 mx-lg-0 pb-md-5">
-            <Col className='pb-4'>
+            <Col className='pb-4 xs-footer-display'>
                 <h6>ارتباط با ما</h6>
             </Col>
             <Col>
@@ -48,13 +48,13 @@ const FooterContent = () => {
             </Col>
       </Col>
       <Col lg={3} md={6} sm={6} className="d-flex flex-column justify-content-center mx-md-auto mx-lg-0 pb-md-3">
-            <Col className='pb-4'>
+            <Col className='pb-4 xs-footer-display'>
                 <h6>لینک های مفید</h6>
             </Col>
             <Navbar links={footerLinks} isFooter={true} className="d-flex flex-column p-0" />
       </Col>
       <Col lg={3} md={6} sm={6} className="d-flex flex-column justify-content-center mx-md-auto  mx-lg-0 pb-md-3">
-            <Col className='pb-4'>
+            <Col className='pb-4 xs-footer-display'>
                 <h6>شبکه های اجتماعی</h6>
             </Col>
             <Row>

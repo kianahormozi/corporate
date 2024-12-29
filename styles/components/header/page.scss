@@ -10,6 +10,11 @@
     align-items: center;
     justify-content: center;
     z-index: 1; 
+
+    @media (max-width:480px) {
+        height: 250px;
+        
+    }
 }
 
 .header-banner .cover{
@@ -35,3 +40,4 @@
     position: relative;
     z-index: 4; 
 }
+

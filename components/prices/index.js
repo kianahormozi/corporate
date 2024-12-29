@@ -19,10 +19,10 @@ const Prices = () => {
             <div className="d-flex pb-4">
               <div className="vertical-line mt-3"></div>
               <h5 className="red-color pt-1 mx-3">خدمات ما</h5>
-              <div className="vertical-line mt-3"></div>
+              <div className="vertical-line mt-3"></div> 
             </div>
           </Col>
-          <Col lg={8} className='pt-2 pb-lg-4 pb-md-5 pb-sm-4 px-0 w-lg-50 w-md-100 w-sm-100 text-center'>
+          <Col lg={8} className='pt-2 pb-lg-4 pb-md-5 pb-sm-4 px-0 w-lg-50 w-md-100 w-sm-100 xs-display text-center'>
             <p className='fw-light fs-5'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
           </Col>
         </Row>

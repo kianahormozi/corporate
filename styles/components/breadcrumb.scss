@@ -1,27 +1,48 @@
 .breadcrumb {
-  margin-top: 9rem !important;
+  margin-top: 18.5rem !important;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .breadcrumb {
-    margin-top: 10rem !important;
+    margin-top: 20rem !important;
   }
 }
 
+@media (max-width:576px) {
+  .breadcrumb {
+    margin-top: 20rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb {
+    margin-top: 10.5rem !important;
+  }
+}
+
+.breadcrumb-item {
+  font-size: 13px;
+  color: #888;
+  display: flex;
+  align-items: center;
+}
+
+/* جداکننده `/` */
 .breadcrumb-item + .breadcrumb-item::before {
   content: '/';
   color: #888;
   padding: 0 0.3rem;
-   
-  margin: 0;
+}
+
+.breadcrumb-item a {
+  color: #888;
+  text-decoration: none;
 }
 
 .custom-border-bottom {
   border-bottom: 1px solid #e5e8ec;
-}
-
-.breadcrumb-item span {
-  display: inline;
-  color: #888;
-  font-size: 13px;
 }
