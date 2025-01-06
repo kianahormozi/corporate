@@ -29,9 +29,12 @@ const TestiMonialsSlider = ({ Items }) => {
         },
         480: {
           slidesPerView:1,
+        },
+        360: {
+          slidesPerView:1,
         }
       }}
-      className="testimonial-swiper"
+      className="testimonial-swiper" 
     >
       {Items.map((item, index) => (
         <SwiperSlide key={index} className="w-sm-100 w-md-50">

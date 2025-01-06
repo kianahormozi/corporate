@@ -1,55 +1,55 @@
 import React, { useRef } from 'react';
 import { Col, Container, Row, Card, CardBody, CardText, CardTitle } from 'react-bootstrap';
-import BusinessSlider from './businessSlider';
+import BusinessSlider from './Slider';
 
 const slides = [
   {
     title: 'خدمات طراحی',
     description: 'ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد',
     image: '/images/slider1.jpg',
-    link: '/' // تغییر Link به link
+    link: '/'
   },
   {
     title: 'توسعه وب',
     description: 'طراحان سایت هنگام طراحی قالب سایت معمولا با این موضوع رو برو هستند که محتوای اصلی صفحات آماده نیست. در نتیجه طرح کلی دید درستی به کار فرما نمیدهد.',
     image: '/images/slider2.jpg',
-    link: '/' // تغییر Link به link
+    link: '/'
   },
   {
     title: 'بهینه‌سازی سئو',
     description: 'کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. ',
     image: '/images/slider3.jpg',
-    link: '/' // تغییر Link به link
+    link: '/' 
   },
   {
     title: 'طراحی لوگو',
     description: 'لوگوهای خلاقانه و به‌یادماندنی برای برند شما طراحی می‌کنیم.',
     image: '/images/slider4.jpg',
-    link: '/' // تغییر Link به link
+    link: '/' 
   },
   {
     title: 'توسعه وب',
     description: 'طراحان سایت هنگام طراحی قالب سایت معمولا با این موضوع رو برو هستند که محتوای اصلی صفحات آماده نیست. در نتیجه طرح کلی دید درستی به کار فرما نمیدهد.',
     image: '/images/slider2.jpg',
-    link: '/' // تغییر Link به link
+    link: '/' 
   },
   {
     title: 'بهینه‌سازی سئو',
     description: 'کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. ',
     image: '/images/slider3.jpg',
-    link: '/' // تغییر Link به link
+    link: '/' 
   },
   {
     title: 'طراحی لوگو',
     description: 'لوگوهای خلاقانه و به‌یادماندنی برای برند شما طراحی می‌کنیم.',
     image: '/images/slider4.jpg',
-    link: '/' // تغییر Link به link
+    link: '/' 
   },
   {
     title: 'بازاریابی دیجیتال',
     description: 'نکته بعدی در مورد متن ساختگی لورم ایپسوم این است که بعضی از طراحان وبسایت و گرافیست کاران بعد از آنکه قالب و محتوای مورد نظرشون را ایجاد کردند از یاد می‌برند که متن لورم را از قسمتهای مختلف سایت حذف کنند ',
     image: '/images/slider5.jpg',
-    link: '/' // تغییر Link به link
+    link: '/' 
   }
 ];
 
@@ -102,7 +102,7 @@ const Business = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col lg={8} md={12} className="px-0 order-md-0 order-lg-1">
+          <Col lg={8} md={12} className="px-lg-0 order-md-0 order-lg-1">
             <BusinessSlider
               slides={slides}
               settings={sliderSettings}

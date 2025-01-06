@@ -8,7 +8,7 @@ const FooterContent = () => {
     { name: 'درباره ما', link: '/aboutUs' },
     { name: 'خدمات ما', link: '/Service' },
     { name: 'اخبار', link: '/news' },
-    { name: 'پروژه‌ها', link: '/cases' },
+    { name: 'پروژه‌ها', link: '/case' },
     { name: 'آیتم‌ ها' , link: '/repertoire' },
     { name: 'ارتباط با ما', link: '/contactUs' }
   ];
@@ -21,7 +21,7 @@ const FooterContent = () => {
                 <h6>درباره ما</h6>
             </Col>
             <Col>
-                <p className='small text-line-height w-75 text-color'>
+                <p className='small text-line-height w-90 text-color'>
                 اژانو به عنوان یکی از فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت امن و سریع، ۵ روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر، اعتماد کاربران گرامی را جلب نماید
                 </p>
             </Col>

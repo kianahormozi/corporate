@@ -1,7 +1,7 @@
 .video-slide {
   width: 100%;
-  position: relative;
-  margin-top: 12px;
+  position: relative; 
+  margin-top: 12px; 
 }
 
 .video-thumbnail {
@@ -9,24 +9,8 @@
   z-index: 1;
   width: 480px; 
   height: 450px; 
-  box-shadow: 23px 20px #cececf;
+  box-shadow: 23px 20px #cececf; 
 
-  @media (max-width:480px) {
-    width: 380px;
-    height: 360px;
-    
-  }
-}
-
-.video-thumbnail::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); 
-  z-index: 2;
 }
 
 .play-button {
@@ -45,9 +29,38 @@
   color: red;
 }
 
+.video-thumbnail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 2;
+}
+
 @media (max-width:480px) {
   .video-xs-display {
     width: 380px;
     height: 360px;
+  }
+
+  .video-thumbnail{ 
+    width: 380px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 360px) {
+  .video-xs-display {
+    width: 290px;
+    height: auto;
+  }
+
+  .video-thumbnail {
+    width: 290px; 
+    height: auto; 
+    box-shadow: 15px 15px #cececf; 
   }
 }

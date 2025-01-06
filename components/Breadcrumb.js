@@ -11,7 +11,7 @@ const BreadcrumbComponent = () => {
     'aboutUs': 'درباره ما',
     'service': 'خدمات ما',
     'new': 'اخبار',
-    'cases': 'پروژه‌ها',
+    'case': 'پروژه‌ها',
     'repertoire': 'آیتم‌ها',
     'contactUs': 'ارتباط با ما',
   };

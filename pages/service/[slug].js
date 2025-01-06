@@ -8,13 +8,13 @@ const AppContent = dynamic ( import ('@/components/content'));
 import ServicesGallery from '/components/Services/Gallery'
 import ServicesSlider from '/components/Services/Slider'
 import FeaturedCases from '/components/Services/featuredCases'
-import BlogSearchBox from '/components/blog/blogSearchBox'
+import BlogSearchBox from '/components/blog/SearchBox'
 import ServicesBar from '@/components/Services/Bar';
 import ServicesPie from '@/components/Services/Pie';
 import FaqSection from '@/components/FrequentlyQuestions/faqSection';
 const BreadcrumbComponent = dynamic ( import ( '@/components/breadCrumb'));
 
-const ServicesPost = ({servicedata}) => {
+const ServicesPost = ({ servicedata }) => {
     const router = useRouter();
 
     if (router.isFallback) {
@@ -22,13 +22,12 @@ const ServicesPost = ({servicedata}) => {
     }
     
     return (
-        <>
         <AppContent headerImage='/images/services.jpg'>
             <BreadcrumbComponent />
             <div className='position-relative'>
                     <Container className='px-0 py-4'>
                     <Row className='content'>
-                        <Col lg={9} md={12} sm={12} xs={12} className='d-flex ps-4 flex-column'>
+                        <Col lg={9} md={12} sm={12} xs={12} className='d-flex ps-4 flex-column slug-padding'>
                         <h4>
                             {servicedata.dataTitle}
                         </h4>
@@ -40,7 +39,7 @@ const ServicesPost = ({servicedata}) => {
                         alt={servicedata.dataTitle}
                         width='300'
                         height='400'
-                        className='pt-4 w-100 ' />
+                        className='pt-4 w-100 sm-card-padding' />
                         
                         {/* notice */}
                         <p className='slug-notice mt-4'>
@@ -48,49 +47,49 @@ const ServicesPost = ({servicedata}) => {
                         </p>
 
                         {/* detail */}
-                        <p className='text-font text-line-height pt-4 pb-2'>
+                        <p className='text-font text-line-height pt-4 pb-2 pb-sm-1'>
                             {servicedata.dataDetail}
                         </p>
 
-                        <Row className='pt-5'>
-                            <Col lg={6}>
-                            <h4 className='pb-4 fw-light'>
+                        <Row className='pt-5 slug-service-display align-items-baseline'>
+                            <Col lg={6} md={6}>
+                            <h4 className='pb-4 fw-light'> 
                             شبکه ایمنی و ایجاد ثروت
                             </h4>
                             <div>
-                                <p className='mb-3 text-font'>
-                                    {servicedata.additionalText}
+                                <p className='mb-3 text-font'> 
+                                    {servicedata.additionalText} 
                                 </p>
                             </div>
                             <div>
                                 <ul>
                                 {servicedata.additionalPoints.map((pieItem , index) => (
                                     <li key={index} className='text-font line-height list-style'> 
-                                        <span className="ps-2 red-color pie-item-style">●</span> {pieItem}
+                                        <span className="ps-2 red-color item-style">●</span> {pieItem}
                                     </li>
                                 ))}
                                 </ul>
                             </div>
                             </Col>
-                            <Col lg={6}>
+                            <Col lg={6} md={6} className=' pt-sm-3'> 
                                 <h4 className='pb-4 fw-light'>
                             تحقیق و تحلیل رقبا
                                 </h4>
                             <ServicesPie data={servicedata.dataslug} />
                             </Col>
                         </Row>
-                        <Row className='py-5'>
+                        <Row className='py-3'>
                             <FaqSection questions={servicedata.servicequestions} showTitle={false} />
                         </Row>
-                        <Row className='pt-5'>
-                            <Col lg={6}>
-                            <h4 className='pb-4 fw-light'>
+                        <Row className='pt-lg-1 pt-sm-3 pt-md-1 align-items-baseline slug-service-display'>
+                            <Col lg={6} md={6} className='order-sm-2 order-lg-1 order-md-1'>
+                            <h4 className='pb-lg-4 fw-light'>
                             {servicedata.dataSubTitle}
                             </h4>
                             <p className='text-font text-line-height pt-4 pb-2'> {servicedata.dataAdditionalText1} </p>
                             <p className='text-font text-line-height pt-4 pb-2'> {servicedata.dataAdditionalText2} </p>
                             </Col>
-                            <Col lg={6}>
+                            <Col lg={6} md={6} className=' pt-sm-5 order-sm-1 order-lg-2 order-md-2'>
                                 <h4 className='pb-4 fw-light'>
                             تحقیق و تحلیل رقبا
                                 </h4>
@@ -99,8 +98,7 @@ const ServicesPost = ({servicedata}) => {
                         </Row>
                         </Col>
 
-                         {/*سایدبار*/ }
-
+                         {/* sidebar */}
                         <Col lg={3} className='pe-4 h-100 blog-display'>
                         <BlogSearchBox />
                         <div>
@@ -118,7 +116,6 @@ const ServicesPost = ({servicedata}) => {
                     <div className="shadow-line"></div>
                 </div>
         </AppContent>
-        </>
     );
 };
 export async function getStaticPaths() {
@@ -131,7 +128,7 @@ export async function getStaticPaths() {
     };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }) { 
     const servicedata = await getDataBySlug(params.slug);
     if (!servicedata) {
         return {

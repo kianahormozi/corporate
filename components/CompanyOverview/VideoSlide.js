@@ -10,7 +10,7 @@ const VideoSlide = ({ videoUrl, thumbnail }) => {
   const handleClose = () => setShow(false);
 
   return (
-    <div className="video-slide d-flex align-items-center justify-content-center">
+    <div className="video-slide d-flex align-items-center justify-content-center"> 
       {/* Video Thumbnail with Cover */}
       <div className="video-thumbnail">
         <Image
@@ -33,7 +33,7 @@ const VideoSlide = ({ videoUrl, thumbnail }) => {
       </Button>
 
       {/* Modal for Video Playback */}
-      <Modal show={show} onHide={handleClose} centered size="lg">
+      <Modal show={show} onHide={handleClose} centered size="lg"> 
         <Modal.Body className="p-0">
           <ReactPlayer
             url={videoUrl}

@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { Card, CardBody, CardText, CardTitle, Col, Container, Row } from 'react-bootstrap'
+import { Card, CardBody, CardText,  Col, Container, Row } from 'react-bootstrap'
 
 const cases = [
     {
-        CaseImage:"/images/1.jpg",
+        CaseImage:"/images/1.jpg", 
         CaseCategory:"راه‌حل‌های کسب‌وکار",
         CaseTitle:"برنامه‌ریزی کسب‌وکار، استراتژی و اجرا"
     },

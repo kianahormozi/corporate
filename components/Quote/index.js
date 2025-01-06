@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import QuoteForm from './quoteForm';
+import QuoteForm from './Form';
 
 const Quote = () => {
   return (
-    <section className="Quote-bg py-5">
+    <section className="Quote-bg py-5 padding-sm">
       <Container className='py-5'>
         <Row className="pb-5">
           <Col>

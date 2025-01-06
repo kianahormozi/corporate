@@ -16,9 +16,9 @@ const Value = () => {
             className="value-image"
           />
         </Col>
-        <Col lg={6} className="value-content px-0">
+        <Col lg={6} className="value-content px-0"> 
           <Card className="border-0 card-padding px-5 bg-transparent">
-            <Card.Body className="w-90">
+            <Card.Body className="w-lg-90 sm-width">
               <Card.Title className="pb-4 text-white text-line-height fw-bold">
                 ما به خودمان وفادار هستیم و تعهد داریم که همواره بهترین عملکرد را ارائه دهیم.
               </Card.Title>

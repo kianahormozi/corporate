@@ -3,9 +3,56 @@
 @import './tagWidget.scss';
 @import './searchBox.scss';
 @import './comment.scss';
+@import './author.scss';
+@import './postInfo.scss';
 
 @media (max-width:768px) {
     .blog-display {
         display: none;
     }
+}
+
+.items-grid-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    @media (max-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width:576px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.date {
+    background-color: #ec1113 !important;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.day {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 0 0 5px;
+}
+
+.month {
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+    display: block;
 }

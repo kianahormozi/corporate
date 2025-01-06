@@ -6,4 +6,8 @@
     &:hover {
         opacity: 1;
     }
+
+    @media (width:"768px") {
+        font-size: 14px;
+    }
 }

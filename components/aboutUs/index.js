@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from 'next/link';
 
-const AboutUs = () => {
+const AboutUs = () => { 
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({ target: ref });
     const translateYTopImage = useTransform(scrollYProgress, [-0.5, 1.5], [-120, 100]); 
@@ -24,7 +24,7 @@ const AboutUs = () => {
                             <Card.Text className="primary-color pb-4">
                                 ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است...
                             </Card.Text>
-                            <Link href='/' className="dark-link-button px-4">
+                            <Link href='/' className="dark-link-button px-4"> 
                                 ادامه مطلب
                             </Link>
                         </Card.Body>

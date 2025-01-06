@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import TestiMonialsSlider from './testiMonialsSlider'
+import TestiMonialsSlider from './Slider'
 
 const TestimonialsItems = [
     {text: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است کی از مهم‌ترین رویدادهای هنری سال' , name:"Barzek56" , career:"Manager at ColdHawk Inc."},
@@ -27,7 +27,7 @@ const Testimonials = () => {
                 <p className='fw-light fs-5'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
               </Col>
           </Row>
-          <Row className='pb-5'>
+          <Row className='pb-3'>
               <TestiMonialsSlider Items = {TestimonialsItems} />
           </Row>
       </Container>

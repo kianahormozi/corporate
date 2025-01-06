@@ -124,6 +124,26 @@
   }
   
   .card-link-button:hover {
-    background-color: #ffff;
+    background-color: #ffff; 
     border-color: #ffff;
   } 
+
+  @media (max-width: 768px) {
+    .flip-card {
+        max-height: 450px; 
+        aspect-ratio: 4 / 6; 
+    }
+
+    .flip-card-front {
+        min-height: 450px; 
+    }
+
+    .flip-card-back {
+        min-height: 450px; 
+    }
+
+    .front-card-text {
+        top: 56%;
+    }
+}
+

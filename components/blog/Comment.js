@@ -48,18 +48,18 @@ export const Comments = [
   },
 ]
 const Comment = () => {
+  const commentCountText = `نظرات (${Comments.length})`;
   return (
-    <Container fluid>
-      <Row>
-        <h4  className='fw-bold py-5'>
-          نظرات 
+    <Container fluid id='comments-section'>
+      <Row className='py-3'>
+        <h4  className=' pt-5 pb-2'>
+       {commentCountText}
         </h4>
-
         {Comments.map((commentItem , index) => (
-        <Col lg={12} md={12} sm={12} xs={12} key={index} className=''>
+        <Col lg={12} md={12} sm={12} xs={12} key={index} >
           <Card className='border-0'>
-            <Row>
-              <Col lg={2}>
+            <Row className='comment-top-border py-4 padding-sm'>
+              <Col lg={2} md={2} sm={3} className='pb-sm-2'>
                 <Image
                 src={commentItem.userImg}
                 alt={commentItem.user}
@@ -67,22 +67,23 @@ const Comment = () => {
                 height='90'
                 className='rounded-circle' />
               </Col>
-              <Col lg={10}>
+
+              <Col lg={10} md={10} sm={9} >
               <Row className='d-flex flex-row'>
-                <Col lg={12} className='d-flex'>
+                <Col lg={12} className='d-flex pb-2 user-row sm-commentdata-justify'>
                     <Col lg={4}>
-                    <Link href='/' className='user-name'>
+                    <Link href='/' className='user-name red-color fw-bold'>
                       {commentItem.user}
                     </Link>
                     </Col>
-                    <Col lg={8} className='d-flex flex-row justify-content-end'>
-                      <Link href='/'><p>{commentItem.commentDate} at {commentItem.commentHour}</p></Link>
-                      /
-                      <Link href='/'><p>پاسخ به کامنت</p></Link>
+                    <Col lg={8} className='d-flex flex-row sm-justify-end'>
+                      <Link href='/' className='date-hour'><p>{commentItem.commentDate} at {commentItem.commentHour}</p></Link>
+                      <span className='between-line px-2'>/</span>
+                      <Link href='/' className='date-hour'><p>پاسخ به کامنت</p></Link>
                     </Col>
                 </Col>
                 <Col lg={12}>
-                    <p>
+                    <p className='primary-color text-font text-line-height'>
                       {commentItem.commentText}
                     </p>
                 </Col>

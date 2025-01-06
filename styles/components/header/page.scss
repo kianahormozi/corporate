@@ -24,16 +24,20 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6) !important;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header-title {
     position: relative;
     z-index: 3; 
-   // font-size: 2rem;
     font-weight: bold;
     color: white;
     padding-top: 6rem;
+
+    @media (max-width:480px) {
+        font-size: 22px;
+        
+    }
 }
 
 .header-content {

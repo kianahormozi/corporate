@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import  SwiperCore, { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
-import HeaderBoxes from './headerBoxes';
+import HeaderBoxes from './Boxes';
 
 
 SwiperCore.use([Autoplay]);

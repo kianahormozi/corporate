@@ -1,23 +1,60 @@
 .user-name {
     font-size: 15px;
-    transition: all .25s ease !important;
+    transition: all 0.25s ease !important;
     text-decoration: none;
-    &:hover {
-        border-bottom: 1px solid #ec1113;
-    }
+}
+
+.user-name:hover {
+    border-bottom: 1px solid #ec1113;
 }
 
 .date-hour {
     color: #888;
     font-size: 13px;
     text-transform: none;
-    transition: all .4s ease-in-out !important;
-    &:hover {
-        border-bottom: 1px solid #ec1113;
-        color: #ec1113;
-    }
+    transition: all 0.4s ease-in-out !important; 
+}
+
+.date-hour:hover {
+    border-bottom: 1px solid #ec1113;
+    color: #ec1113;
+}
+
+.sm-commentdata-justify {
+    justify-content:space-between;
+}
+
+.sm-justify-end {
+    justify-content: flex-end;
 }
 
 .between-line {
     color: #888;
+}
+
+.comment-top-border {
+    border-top: 1px solid #ccc;
+}
+
+@media (max-width: 576px) {
+    .user-row {
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+    }
+    
+    .sm-commentdata-justify {
+        justify-content: flex-start;
+    }
+
+    .sm-justify-end {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .comment-top-border {
+        display: flex !important;
+        flex-direction: column !important; 
+    }
 }

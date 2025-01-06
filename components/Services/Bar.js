@@ -74,6 +74,7 @@ const ServicesBar = () => {
     options={chartConfig.options}
     height={150}
     width={200}
+    className='pb-3 sm-card-padding'
   />;
 };
 

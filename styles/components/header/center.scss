@@ -3,6 +3,14 @@
     display: flex;
     align-items: right;
     margin-top: 2.5rem;
+
+    @media (max-width: 576px) {
+      height: 63vh;
+    }
+
+    @media (max-width:480px) {
+      height: 70vh;
+    }
   }
   
   .animated-line {
@@ -12,7 +20,7 @@
     width: 4px;
     height: 60px; 
     background-color: #fff;
-    animation: moveLine 3s infinite ease-in-out;
+    animation: moveLine 3s infinite ease-in-out; 
   } 
   
   @keyframes moveLine {
@@ -43,5 +51,56 @@
     font-size: 1rem;
     padding-right: 2rem;
     z-index: 4;
+  }
+  
+  @media (max-width: 480px) {
+    .center-content {
+      height: auto; /* تنظیم ارتفاع برای جلوگیری از خروج محتوا */
+      display: block; 
+      padding: 6rem 1rem 0;
+    }
+  
+    .main-title {
+      font-size: 1.5rem; 
+      padding-right: 1rem; 
+    }
+  
+    .description {
+      font-size: 0.8rem;
+      padding-right: 1rem; 
+    }
+  
+    .animated-line {
+      left: calc(100% + -6px); 
+      top: 15px; 
+      width: 2px; 
+      height: 40px; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .center-content {
+      height: auto; /* تنظیم ارتفاع برای جلوگیری از خروج محتوا */
+      display: block; 
+      padding: 6rem 1rem 0;
+
+    }
+  
+    .main-title {
+      font-size: 2rem; 
+      padding-right: 1rem; 
+    }
+  
+    .description {
+      font-size: 0.8rem;
+      padding-right: 1rem; 
+    }
+  
+    .animated-line {
+      left: calc(100% + -6px); 
+      top: 15px; 
+      width: 2px; 
+      height: 40px; 
+    }
   }
   

@@ -13,7 +13,12 @@
 
 .card-padding {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4.5rem;
+
+    @media (max-width:480px) {
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -22,5 +27,11 @@
   }
   .value-image-container {
     order: 2; 
+  }
+}
+
+@media (max-width: 360px) {
+  .sm-width {
+    width: 100%;
   }
 }

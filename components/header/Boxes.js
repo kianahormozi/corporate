@@ -2,10 +2,10 @@ import { Row, Col, Container } from 'react-bootstrap';
 
 const HeaderBoxes = ({ activeSlide, setActiveSlide }) => {
   const boxes = [
-    { id: 0, icon: "bi-graph-up", title: 'Finance & Trades', text: 'Stock Exchange & Banks' },
-    { id: 1, icon: "bi-megaphone", title: 'Crowdfunding', text: 'Kickstarter & Early Campaigns' },
-    { id: 2, icon: "bi-globe", title: 'Global Trade', text: 'Incoterms & Trades' },
-    { id: 3, icon: "bi-lightbulb", title: 'Venture Capital', text: 'Seed Funding & Innovations' }
+    { id: 0, icon: "bi-graph-up", title: 'امور مالی و تجارت', text: 'بورس اوراق بهادار و بانک ها' },
+    { id: 1, icon: "bi-megaphone", title: 'تامین مالی جمعی', text: 'کیک استارتر و کمپین های اولیه' },
+    { id: 2, icon: "bi-globe", title: 'تجارت جهانی', text: 'اینکوترمزامور مالی و تجارت' },
+    { id: 3, icon: "bi-lightbulb", title: 'سرمایه خطرپذیر', text: 'تامین مالی بذر و نوآوری ها' }
   ];
 
   return (

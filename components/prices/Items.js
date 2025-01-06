@@ -29,10 +29,10 @@ const PricesItems = () => {
   }
 
   return (
-    <Container className='pb-5 px-md-0'>
+    <Container className='pb-5 px-md-0'> 
       <Row className='px-0'>
         {slides.map((slide, index) => (
-          <Col lg={4} md={4} sm={12} key={index} className="d-flex justify-content-center pt-md-5 pt-sm-5 mb-4">
+          <Col lg={4} md={4} sm={12} key={index} className="d-flex justify-content-center pt-md-2 pt-sm-5 mb-4 padding-sm">
             <Card className="flip-card border-0 shadow w-100 mx-2" style={{ '--bg-image': `url(${slide.front.image})` }}>
               <div className="flip-card-inner">
                 {/* Front Side */}

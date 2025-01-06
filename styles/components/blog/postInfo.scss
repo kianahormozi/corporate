@@ -1,0 +1,98 @@
+.date-info {
+    background-color: #ec1113 !important;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.day-info {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 0 0 5px;
+}
+
+.month-info {
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+    display: block;
+}
+
+.info-gap {
+    gap: 3rem;
+}
+
+.sm-items {
+    align-items: center;
+}
+
+.comment-display {
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px), (max-width: 576px) {
+    .sm-width {
+        width: 100%;
+
+    }
+    .date-info {
+        width: 75px;
+        height: 75px;
+    }
+
+    .day-info, .month-info {
+        text-align: center;
+    }
+
+    .info-gap {
+        gap: .5rem;
+    }
+
+    .comment-display {
+        justify-content: flex-end;
+    }
+
+    .sm-x-margin {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+}
+
+@media (max-width: 480px), (max-width: 360px) {
+    .date-info {
+        display: none;
+    }
+
+    .info-gap {
+        gap: .5rem;
+    }
+
+    .sm-column-display {
+        flex-direction: column;
+    }
+
+    .comment-display {
+        justify-content: flex-start;
+    }
+
+    .sm-x-margin {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .sm-x-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sm-y-padding {
+        padding-top: .5rem;
+    }
+}

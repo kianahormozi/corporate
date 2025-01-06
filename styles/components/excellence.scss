@@ -22,4 +22,18 @@
   .padding-top-md {
     padding-top: 4rem;
   } 
+
+  .sm-padding {
+    padding: 0 1.5rem;
+  }
+}
+
+@media ( max-width:360px) {
+  .sm-font-size {
+    font-size: 11px;
+  }
+
+  .sm-title-padding {
+    padding-bottom: 1.5rem;
+  }
 }

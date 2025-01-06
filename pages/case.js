@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 const BreadcrumbComponent = dynamic ( import ( '@/components/breadCrumb'));
 const AppContent = dynamic ( import ('@/components/content'));
 const PostCategories = dynamic ( import ('@/components/PostCategories'));
-function Cases() {
+function Case() {
   return (
     <>
       <Head>
@@ -20,4 +20,4 @@ function Cases() {
   )
 }
 
-export default Cases
+export default Case

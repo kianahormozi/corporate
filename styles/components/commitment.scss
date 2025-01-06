@@ -25,3 +25,9 @@
     background: transparent;
     padding: 1rem;
 }
+
+@media (max-width: 480px) {
+    .sm-commitment-text {
+        font-size: 18px;
+    }
+}

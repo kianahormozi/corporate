@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import PricesItems from './pricesItems';
-import PricesSliderLogo from './pricesSliderLogo';
+import PricesItems from './Items';
+import PricesSliderLogo from './SliderLogo';
 
 const TrustLogos = [
   { src: "/images/trust-1.png", alt: "Slide1" },

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Accordion, Container } from 'react-bootstrap';
 
-const FaqSection = ({ questions, showTitle = true }) => {
+const FaqSection = ({ questions, showTitle = true }) => { 
   const [activeKey, setActiveKey] = useState(null);
 
   const toggleActiveKey = (key) => {

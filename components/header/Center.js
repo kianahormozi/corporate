@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const HeaderCenter = ({ slideTitle, slideText }) => {
   return (
-    <Container className="center-content position-relative px-0">
+    <Container className="center-content position-relative px-0 ">
       <Row className="align-items-center">
         <Col lg={8}>
-          <div className="title-container position-relative pb-4">
+          <div className="title-container position-relative pb-4 ">
             <div className="animated-line"></div> 
             <p className="main-title">{slideTitle}</p> 
           </div>
@@ -15,7 +15,7 @@ const HeaderCenter = ({ slideTitle, slideText }) => {
           <Link href='/' className="link-button">ادامه مطلب</Link>
         </Col>
       </Row>
-    </Container>
+    </Container> 
   );
 };
 

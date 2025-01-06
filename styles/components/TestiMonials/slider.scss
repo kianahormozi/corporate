@@ -29,11 +29,13 @@
 
 
 .testimonial-swiper {
+    height: 435px;
     .swiper-pagination-bullets  {
         display: flex;
         align-items: center;
         justify-content: left;
         min-height: 30px;
+        margin-top: 20px; 
         
         .swiper-pagination-bullet {
            

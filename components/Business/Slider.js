@@ -21,11 +21,11 @@ const BusinessSlider = ({ slides, settings }) => {
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
-          <Card className="border-0 bg-transparent">
+          <Card className="border-0 bg-transparent padding-sm">
             <Link href='/'>
             <CardImg className="bussiness-img" variant="top" src={slide.image} alt={slide.title} />
             </Link>
-            <CardBody className="px-0">
+            <CardBody className="px-0 ">
               <Link href={slide.title} ><CardTitle className="fw-bold primary-color title">{slide.title}</CardTitle> </Link>
               <CardText className="text-font">{slide.description}</CardText>
               <Link href={slide.link} passHref className="text-decoration-none red-color read-more-link">

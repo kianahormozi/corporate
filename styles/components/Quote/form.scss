@@ -1,12 +1,16 @@
-
-  .form-columns {
+.form-columns {
     column-count: 2;
     column-gap: 2rem;
 
     @media (width: 768px) {
       column-count: 2; 
     }
+
     @media (width: 576px) {
+      column-count: 1;
+    }
+
+    @media (max-width:480px) {
       column-count: 1;
     }
   }

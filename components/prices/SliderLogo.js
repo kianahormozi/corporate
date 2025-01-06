@@ -30,7 +30,7 @@ const PricesSliderLogo = ({ logos }) => {
       }}
       className="my-swiper"
     >
-      {logos.map((slide, index) => (
+      {logos.map((slide, index) => ( 
         <SwiperSlide key={index}>
           <Image
             src={slide.src}

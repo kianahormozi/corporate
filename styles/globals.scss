@@ -77,6 +77,7 @@ a {
 .primary-color {
   color: #222;
 }
+
 .text-color {
   color: #888;
 }
@@ -93,7 +94,7 @@ a {
   line-height: 2.5 !important;
 }
 
-.pie-item-style {
+.item-style {
   font-size: 10px;
 }
 
@@ -128,7 +129,7 @@ iframe {
 
 .vertical-line {
   width: 60px;
-  height: 2px;
+  height: 1px;
   background-color: #aaaaaa; 
 }
 
@@ -143,6 +144,12 @@ iframe {
   padding: 10px 25px;
   transition: background-color 0.3s ease;
   margin-right: 2rem;
+
+  @media (max-width: 480px) {
+    margin-right: 1rem;
+    font-size: 11px;
+    padding: 6px 18px;
+  }
 }
 
 .link-button:hover {
@@ -157,6 +164,12 @@ iframe {
     color: #222;
     padding: 10px 25px;
     transition: background-color 0.3s ease;
+
+    @media (max-width: 576px) {
+      margin-right: 1rem;
+      font-size: 11px;
+      padding: 6px 18px;
+    }
 }
 
 .dark-link-button:hover {
@@ -197,4 +210,42 @@ iframe {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .padding-top-sm {
+    padding-top: 3rem;
+  }
+
+  .order-sm-1 {
+    order: 1;
+  }
+
+  .order-sm-2 {
+    order: 2;
+  }
+
+  .sm-slug-image {
+    padding: 0 1rem;
+    width: auto;
+  }
 } 
+
+@media (max-width: 576px) {
+  .sm-card-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .slug-padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .slug-service-display {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
