@@ -10,7 +10,7 @@ const PostCategoriesDetails = ({ title, image , detailscontext }) => {
           <h4 className=" mb-4">{title}</h4>
             <Col lg={12} md={12} className='sm-details-display'>
                 {/* متن و توضیحات */}
-                <Col lg={6} md={6} sm={12} xs={12} className="mb-4 mb-lg-0 ps-3">
+                <Col lg={6} md={6} sm={12} xs={12} className="mb-4 mb-lg-0 ps-3"> 
                     {detailscontext.map((detailstext , index) => (    
                       <p key={index} className="pb-4 text-font text-line-height primary-color">
                         {detailstext}

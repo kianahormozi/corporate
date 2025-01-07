@@ -12,6 +12,7 @@ import ServicesGallery from '/components/Services/Gallery'
 import ServicesSlider from '/components/Services/Slider'
 import PostCategoriesDetails from '@/components/PostCategories/details';
 import PostCategoriesInformation from '@/components/PostCategories/information'; 
+import PostCategoriesCustomers from '@/components/PostCategories/customers';
 
 
 const  CasePost= ({ casedata }) => {
@@ -42,6 +43,9 @@ const  CasePost= ({ casedata }) => {
                           />
 
                           <PostCategoriesInformation /> 
+                          <PostCategoriesCustomers 
+                          testimonials={caseItems[0].testimonials}
+                          />
                         </Col>
 
                        {/* sidebar */}
